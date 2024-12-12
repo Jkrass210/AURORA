@@ -1,0 +1,17 @@
+.card3 {
+
+  &__box-img {
+    button {
+      color: var(--color-text-black);
+    }
+  }
+
+  &__link-card {
+    color: var(--color-text-black);
+  }
+  &__price {
+    & span:first-child {
+      color: var(--color-text-black);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.personal-account {
+  &__list-points {
+    li {
+      a {
+        color: var(--color-text-black);
+      }
+    }
+  }
+}

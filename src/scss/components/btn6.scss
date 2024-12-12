@@ -1,0 +1,41 @@
+.btn6 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--color-background-card);
+  border-bottom: 1px solid var(--color-background-path);
+  white-space: nowrap;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-text-white);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: var(--color-text-black);
+    background-color: var(--color-background-yellow);
+  }
+
+  &.active {
+    color: var(--color-text-black);
+    background-color: var(--color-background-yellow);
+  }
+}
+
+@media (max-width: 1030px) {
+  .btn6 {
+    padding: 20px;
+    font-size: 20px;
+  }
+}

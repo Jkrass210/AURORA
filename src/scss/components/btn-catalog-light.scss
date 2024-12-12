@@ -1,0 +1,23 @@
+.btn-catalog {
+  border: 1px solid var(--color-text-black);
+  background-color: var(--color-text-black);
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: var(--color-btn-gray2);
+  }
+
+  &.active {
+    border-color: var(--color-btn-gray2);
+    background-color: var(--color-btn-gray2);
+  }
+
+  &__icon {
+    & span {
+      background-color: var(--color-text-white);
+    }
+  }
+  &__text {
+    color: var(--color-text-white);
+  }
+}

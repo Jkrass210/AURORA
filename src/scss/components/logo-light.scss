@@ -1,0 +1,19 @@
+.logo {
+  &__link {
+    img {
+      filter: invert(1) brightness(0);
+    }
+    &:focus-visible {
+      outline: 1px solid var(--color-text-black);
+    }
+  }
+}
+.footer {
+  .logo {
+    &__link {
+      img {
+        filter: none;
+      }
+    }
+  }
+}

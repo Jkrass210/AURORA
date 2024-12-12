@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"Личный кабинет"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"Личный кабинет"})
+    <section class="section personal-account">
+      <div class="personal-account__container container">
+        <ul class="personal-account__list-points list-reset">
+          <li>
+            <a href="#">Текущие заказы</a>
+          </li>
+          <li>
+            <a class="active" href="#">Личные данные</a>
+          </li>
+          <li>
+            <a href="#">История заказов</a>
+          </li>
+          <li>
+            <a href="#">Профили заказов</a>
+          </li>
+        </ul>
+        <div class="personal-account__content">
+          <div class="personal-data">
+            <div class="personal-data__desc-wrapp">
+              <p>Дата обновления:<span>10.10.2024 12:28:03</span></p>
+              <p>Последняя авторизация:<span>10.10.2024 12:28:03</span></p>
+            </div>
+            <form class="personal-data__form">
+              <ul class="personal-data__list list-reset">
+                <li>
+                  <label for="personalName">Имя:</label>
+                  <input id="personalName" type="text" name="name">
+                </li>
+                <li>
+                  <label for="personalSurname">Фамилия:</label>
+                  <input id="personalSurname" type="text" name="surname">
+                </li>
+                <li>
+                  <label for="personalMidname">Отчество:</label>
+                  <input id="personalMidname" type="text" name="midname">
+                </li>
+                <li>
+                  <label for="personalEmail">E-Mail:</label>
+                  <input id="personalEmail" type="text" name="email">
+                </li>
+                <li>
+                  <label for="personalNewPass">Новый пароль:</label>
+                  <input id="personalNewPass" type="text" name="newPass">
+                </li>
+                <li>
+                  <label for="personalConfPass">Подтверждение нового пароля:</label>
+                  <input id="personalConfPass" type="text" name="confPass">
+                </li>
+              </ul>
+              <div class="personal-data__btn-group">
+                <button class="personal-data__submit btn-reset">Сохранить</button>
+                <button class="personal-data__cancel btn-reset">Отмена</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

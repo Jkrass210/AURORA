@@ -1,0 +1,129 @@
+.order-page-container{
+  #bx-soa-order {
+    .left-block {
+      .bx-soa-cart-total-line {
+        color: var(--color-text-black);
+      }
+    }
+    .right-block {
+      .bx-soa-cart-total-line {
+        color: var(--color-text-black);
+      }
+    }
+
+    .bx-soa-cart-total-button-container {
+      a {
+        color: var(--color-text-black);
+        background-color: var(--color-background-yellow);
+        transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+        &:focus,
+        &:focus-visible {
+          outline: none;
+        }
+      
+        &:hover,
+        &:focus-visible,
+        &:active {
+          color: var(--color-background-yellow);
+          background-color: var(--color-text-path);
+        }      
+      }
+    }
+
+    .bx-soa-section {
+      border: none;
+    }
+
+    .bx-soa-section-title-container {
+      padding: 22px 26px;
+      background: var(--color-background-footer);
+
+      .bx-soa-section-title {
+        color: var(--color-background-yellow);
+      }
+    }
+
+    .bx-soa-cart-total-line.bx-soa-cart-total-line-highlighted {
+      background-color: transparent;
+    }
+
+    .bx-soa-section-content {
+
+      background: var(--color-background-card);
+
+      .bx_soa_location {
+        .bx-soa-custom-label {
+          color: var(--color-text-black);
+        }
+      }
+
+      .radio-inline {
+        label {
+          color: var(--color-text-black);
+        }
+      }
+    }
+
+    .dropdown-block {
+      border: 1px solid var(--color-background-yellow);
+
+      .bx-ui-sls-fake {
+        color: #aba8ac;
+      }
+    }
+
+    .bx-soa-tooltip.bx-soa-tooltip-danger .tooltip-inner {
+      color: #A94442;
+    }
+
+    .bx-soa-reference {
+      color: #9a9a9a;
+    }
+
+    .bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container {
+      border-color: var(--color-background-yellow);
+    }
+
+    .bx-soa-pp-desc-container .bx-soa-pp-company {
+      color: var(--color-text-black);
+    }
+
+    .bx-soa-pp-list-termin {
+      color: var(--color-text-black);
+    }
+
+    .bx-soa-pp-list-description {
+      color: var(--color-text-black);
+    }
+
+    .bx-soa-customer-field, .bx-soa-location-input-container {
+      .bx-soa-custom-label, .bx-soa-customer-label {
+        color: var(--color-text-black);
+      }
+      input {
+        color: var(--color-text-black);
+        border: 1px solid var(--color-background-yellow);
+      }
+      textarea {
+        color: var(--color-text-black);
+        border: 1px solid var(--color-background-yellow);
+      }
+    }
+
+    .bx-soa-item-title {
+      a {
+        color: var(--color-text-black);
+      }
+    }
+  }
+}
+.bx-soa-item-td-text .bx-price {
+  color: var(--color-text-black);
+}
+.order-page-container #bx-soa-order .bx-soa-reference {
+  color: var(--color-text-black);
+}
+.bx-soa-pp-company-smalltitle {
+  color: var(--color-text-black);
+}

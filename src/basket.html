@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/components/head.html',{"title":"Корзина"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"Корзина"})
+    <section class="section basket-sec1">
+      <div class="basket-sec1__container container">
+        <div class="basket-sec1__content">
+          <div class="basket-sec1__top">
+            <div class="basket-sec1__left">
+              <p>Промокод:</p>
+              @@include('html/components/search.html',{"placeholder":""})
+            </div>
+            <div class="basket-sec1__right">
+              <p class="basket-sec1__desc">Итого:</p>
+              <div class="basket-sec1__price-wrapp">
+                <p class="basket-sec1__price">3400 ₽</p>
+                @@include('html/components/btn7.html',{"text":"Оформить заказ"})
+              </div>
+            </div>
+          </div>
+          @@include('html/boxs/box-orders.html')
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

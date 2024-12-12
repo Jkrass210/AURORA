@@ -1,0 +1,11 @@
+.list-pages {
+  a {
+    color: var(--color-text-black);
+  }
+
+  &__list {
+    a {
+      color: var(--color-text-black);
+    }
+  }
+}

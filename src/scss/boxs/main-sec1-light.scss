@@ -1,0 +1,25 @@
+.main-sec1 {
+  &__title {
+    color: var(--color-text-black);
+
+    & span {
+      color: var(--color-text-black);
+    }
+  }
+
+  &__desc {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__swiper-pagination {
+    & .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: rgba(111, 111, 111, 0.5);
+      border: 1px solid var(--color-background-yellow);
+    }
+  }
+
+  & .btn1__text {
+    background-color: transparent;
+    color: var(--color-text-black);
+  }
+}

@@ -1,0 +1,13 @@
+.basket-sec1 {
+  &__left {
+    p {
+      color: var(--color-text-black);
+    }
+  }
+  &__desc {
+    color: var(--color-text-black);
+  }
+  &__price {
+    color: var(--color-text-black);
+  }
+}

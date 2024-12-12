@@ -1,0 +1,75 @@
+.switcher {
+  &__wrapp {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none
+  }
+
+  &__legend {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__radio {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-animation: none;
+    appearance: none;
+    margin: 0;
+    width: 18px;
+    min-width: 18px;
+    height: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__radio.dark:checked {
+    background-image: url(../img/header/swicher/dark.svg);
+    background-position: center right 2px;
+  }
+
+  &__radio.light:checked {
+    background-image: url(../img/header/swicher/sun.svg);
+    background-position: center;
+  }
+
+  &__status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-switcher);
+    border-radius: 57px;
+    background-image: url(../img/header/swicher/status.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    transition: background-position 0.2s ease-in-out;
+  }
+
+  &__radio.dark:checked ~ .switcher__status {
+    background-position: center right 2px;
+  }
+
+  &__radio.light:checked ~ .switcher__status {
+    background-position: center left 2px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .switcher {
+    order: 3;
+  }
+}

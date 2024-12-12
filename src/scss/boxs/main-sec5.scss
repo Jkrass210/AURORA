@@ -1,0 +1,14 @@
+.main-sec5 {
+  padding: 60px 0 100px;
+}
+
+@media (max-width: 1030px) {
+  .main-sec5 {
+    padding: 30px 0;
+
+    &__content {
+      position: relative;
+      padding-bottom: 63px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.checkbox1 {
+  &__input:checked ~ .checkbox1__box {
+    border-color: var(--color-text-black);
+    background-color: var(--color-background-yellow);
+
+    svg {
+      opacity: 1;
+    }
+  }
+
+  &__box {
+    border: 1px solid var(--color-text-black);
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out; 
+
+    svg {
+      path {
+        stroke: var(--color-text-black);
+      }
+    }
+  }
+
+  &__text {
+    color: var(--color-text-black);
+  }
+}

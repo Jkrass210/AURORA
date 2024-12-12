@@ -1,0 +1,28 @@
+.bx-authform {
+    .checkbox {
+        color: var(--color-text-black);
+    }
+}
+
+.bx-title {
+    color: var(--color-text-black);
+}
+
+.bx-authform-content-container, .bx-authform-label-container {
+    color: var(--color-text-black);
+}
+.bx-authform-input-container input[type="text"], .bx-authform-input-container input[type="password"] {
+    color: var(--color-text-black);
+}
+.bx-authform-link-container {
+    color: var(--color-text-black);
+    a {
+        color: var(--color-text-black);
+    }
+}
+hr.bxe-light {
+    border-color: var(--color-text-black);
+}
+.bx-authform-description-container, .bx-authform-note-container {
+    color: var(--color-text-black);
+}

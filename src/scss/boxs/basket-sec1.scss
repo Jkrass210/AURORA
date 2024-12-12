@@ -1,0 +1,119 @@
+.basket-sec1 {
+  &__top {
+    padding: 33px 38px 33px 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    background-color: var(--color-background-card);
+  }
+
+  &__left {
+    p {
+      margin-bottom: 24px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: var(--color-text-white);
+    }
+
+    .search__input {
+      min-width: 180px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: end;
+    gap: clamp(5px, 2vw, 30px);
+
+    .btn7 {
+      min-width: 210px;
+    }
+  }
+
+  &__desc {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color: var(--color-text-white);
+  }
+
+  &__price-wrapp {
+    display: flex;
+    align-items: end;
+    gap: clamp(5px, 2vw, 30px);
+  }
+
+  &__price {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: 0.03em;
+    color: var(--color-text-white);
+  }
+}
+
+@media (max-width: 1030px) {
+  .basket-sec1 {
+    &__top {
+      gap: 40px;
+    }
+    &__right {
+      width: 100%;
+    }
+    &__price-wrapp {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 669px) {
+  .basket-sec1 {
+    &__top {
+      margin-bottom: 20px;
+      padding: 20px 20px 20px 10px;
+      flex-direction: column;
+      gap: 38px;
+      align-items: flex-start;
+    }
+
+    &__left {
+      p {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__right {
+      width: 100%;
+      flex-direction: column;
+      gap: 18px;
+      align-items: start;
+
+      .btn7 {
+        min-width: auto;
+      }
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+
+    &__price {
+      font-size: 20px;
+    }
+
+    &__price-wrapp {
+      width: 100%;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+  }
+}

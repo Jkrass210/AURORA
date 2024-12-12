@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head.html',{"title":"Контакты"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"Контакты"})
+    <section class="section contacts-sec1">
+      <div class="contacts-sec1__container container">
+        @@include('html/components/section-title1.html',{"title":"Контакты"})
+        <div class="contacts-sec1__top">
+          <div class="contacts-sec1__info">
+            <p>Оптовый отдел / Розничный отдел / Самовывоз</p>
+            <p>Уважаемые клиенты!</p>
+            <p>
+              По этому адресу для вас работает наш ШОУРУМ, где вы можете лично ознакомиться, протестировать и купить продукцию Nitecore. Ждем вас!
+            </p>
+          </div>
+          <address class="contacts-sec1__address">
+            <ul class="contacts-sec1__list-address list-reset">
+              <li>
+                <p>Москва г., Пятницкое шоссе., дом 18, пав 33</p>
+              </li>
+              <li>
+                <a href="tel:+74956601798">+7 (495) 660-17-98</a>
+              </li>
+              <li>
+                <a href="mailto:info@nitecore.ru">info@nitecore.ru</a>
+              </li>
+            </ul>
+            <ul class="contacts-sec1__list-chart list-reset">
+              <li>
+                График работы: с 9:00 до 18:00 ежедневно без выходных и перерывов.
+              </li>
+              <li>
+                График работы пункта самовывоза: с 9:00 до 19:00 ежедневно без выходных и перерывов.
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="contacts-sec1__map"></div>
+        <div class="contacts-sec1__box-form">
+          <form class="contacts-sec1__form personal-data__form" method="post" action="#">
+            <h3 class="contacts-sec1__title-form">
+              Оставьте заявку и мы свяжемся с вами
+            </h3>
+            <ul class="contacts-sec1__form-list personal-data__list list-reset">
+              <li>
+                <label for="name">Полное имя:</label>
+                <input type="text" name="name" id="name">
+              </li>
+              <li>
+                <label for="email">Адрес электронной почты:</label>
+                <input type="text" name="email" id="email">
+              </li>
+              <li>
+                <label for="tel">Номер телефона:</label>
+                <input type="tel" name="tel" id="tel">
+              </li>
+              <li>
+                <label for="message">Детали:</label>
+                <textarea id="message" name="message"></textarea>
+              </li>
+            </ul>
+            <button class="personal-data__submit btn-reset">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

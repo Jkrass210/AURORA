@@ -1,0 +1,24 @@
+.btn-track-order {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--akcent);
+  transition: color 0.4s ease-in-out;
+
+  & span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible,
+  &:hover,
+  &:active {
+    color: var(--color-text-gray);
+  }
+}

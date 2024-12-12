@@ -1,0 +1,17 @@
+.slide-hero {
+  background-color: #e7e7e7;
+    
+  &__line {
+    background-color: var(--color-text-black);
+    background-image: url(../img/main-page/sec1/beac1-light.png);
+    
+  }
+}
+
+@media (max-width: 669px) {
+  .slide-hero {
+    &__line {
+      background-image: url("../img/main-page/sec1/beac1(340)-light.png");
+    }
+  }
+}

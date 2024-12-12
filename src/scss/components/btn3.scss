@@ -1,0 +1,46 @@
+.btn3 {
+  display: flex;
+  height: 100%;
+
+  &__btn {
+    max-height: 35px;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-text-white);
+    background-color: var(--akcent);
+    transition: background-color 0.4s ease-in-out;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,
+    &:active,
+    &:hover {
+      background-color: var(--knopka);
+    }
+  }
+  
+}
+
+@media (max-width: 1030px) {
+  .btn3 {
+    flex: 1;
+    &__btn {
+      width: 100%;
+      height: auto;
+      padding: 12px 20px;
+    }
+    
+  }
+}

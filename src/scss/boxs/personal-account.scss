@@ -1,0 +1,65 @@
+.personal-account {
+  &__list-points {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      flex: 1;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        padding: 40px;
+        background-color: var(--color-background-card);
+        border: 1px solid var(--color-background-card);
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 60%;
+        text-transform: uppercase;
+        color: var(--color-text-white);
+        transition: border-color 0.4s ease-in-out;
+
+        &:focus,
+        &:focus-visible {
+          outline: none;
+        }
+
+        &:focus-visible,
+        &:hover,
+        &:active {
+          border-color: var(--color-background-yellow);
+        }
+
+        &.active {
+          border-color: var(--color-background-yellow);
+        }
+      }
+    }
+  }
+
+  &__content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .personal-account {
+    &__list-points {
+      gap: 10px;
+      li {
+        a {
+          padding: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

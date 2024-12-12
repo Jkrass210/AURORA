@@ -1,0 +1,43 @@
+.main-sec6 {
+  padding: 0 0;
+  background-color: var(--color-background-about);
+  .section-title {
+    color: var(--color-text-white);
+  }
+
+  &__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 50%;
+    background-image: url('../img/main-page/sec6/beac1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right -50px;
+    background-size: contain;
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159%;
+    letter-spacing: -0.05em;
+    color: var(--color-text-white);
+  }
+}
+
+@media (max-width: 1030px) {
+  .main-sec6 {
+    padding: 0;
+    &__content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-right: 0;
+      background-image: none;
+    }
+
+    &__desc {
+      margin-bottom: 64px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.card5 {
+  padding: 27px 16px;
+  background-color: var(--color-background-card);
+  height: 100%;
+
+  &__title {
+    max-width: 240px;
+    margin-bottom: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: var(--color-background-yellow);
+  }
+
+  &__desc {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--color-text-card-desc);
+  }
+}

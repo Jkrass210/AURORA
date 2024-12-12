@@ -1,0 +1,37 @@
+.btn7 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 290px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-text-black);
+  background-color: var(--color-background-yellow);
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: var(--color-text-white);
+    background-color: var(--color-text-path);
+  }
+
+  &-wrapp {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 669px) {
+  .btn7 {
+    padding: 15px 20px;
+  }
+}

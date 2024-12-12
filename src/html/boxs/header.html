@@ -1,0 +1,122 @@
+<header class="header" id="header">
+	<div class="header__top">
+		<div class="container header__container">
+			<div class="header__content">
+				<nav class="header__nav" data-window-id="burgerMenu">
+					<ul class="header__list list-reset">
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li>
+							<a href="#">Доставка</a>
+						</li>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Гарантия</a>
+						</li>
+						<li>
+							<a href="#">Поддержка</a>
+						</li>
+						<li>
+							<a href="#">Партнерам</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__group-link">
+					<!--@@include('../components/switcher.html')-->
+					<a href="tel:+74951394934" class="header__link-phone">
+						8 (495) 139-49-34
+					</a>
+					<ul class="header__list-link list-reset">
+						<li>
+							<a href="#">
+								<svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+									<use xlink:href="img/sprite.svg#tg"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="22" height="14" viewBox="0 0 22 14" fill="none">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+									<use xlink:href="img/sprite.svg#wu"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="header__container container">
+			<div class="header__content">
+				<div class="header__box-left">
+					@@include('../components/logo.html')
+					<button class="header__burger btn-reset" id="burgerMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="header__box-search">
+						@@include('../components/btn-catalog.html')
+						@@include('../components/search.html',{"placeholder":"поиск"})
+					</div>
+				</div>
+				<div class="header__box-right">
+					@@include('../components/btn-track-order.html')
+					<div class='modal_del_head_top'>
+						<div class='modal_del_head'>
+							<button class="btn-reset modal_del_close">
+								<span></span>
+								<span></span>
+							</button>
+							<div class="test">
+								
+							</div>
+						</div>
+					</div>
+					<ul class="header__list-link-bottom list-reset">
+						<li>
+							<a href="#">
+								<svg width="19" height="21" viewBox="0 0 19 21" fill="none">
+									<use xlink:href="img/sprite.svg#logIn"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<use xlink:href="img/sprite.svg#111"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="19" width="23" height="20" viewBox="0 0 23 20" fill="none">
+									<use xlink:href="img/sprite.svg#like"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('./drop-down-catalog.html')
+</header>

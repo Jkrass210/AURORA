@@ -1,0 +1,61 @@
+.btn1 {
+  pointer-events: auto;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--knopka);
+
+  &__link {
+    display: flex;
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      .btn1__text {
+        background-color: var(--akcent);
+      }
+      .btn1__box-svg {
+        background-color: var(--color-btn-gray2);
+      }
+    }
+  }
+  &__text {
+    padding: 10px 15px;
+    background-color: var(--color-btn-gray2);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+    color: var(--color-text-white);
+  }
+  &__box-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    color: var(--color-text-white);
+    background-color: var(--color-text-black);
+    transition: background-color 0.4s ease-in-out;
+  }
+}
+
+@media (max-width: 1030px) {
+  .btn1 {
+    &__text {
+      padding: 8px 20px;
+      font-size: 16px;
+    }
+
+    &__box-svg {
+      svg {
+        width: 17px;
+        height: 15px;
+      }
+    }
+  }
+}

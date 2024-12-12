@@ -1,0 +1,13 @@
+.counter1 {
+  border: 1px solid var(--color-text-black);
+
+  & button {
+    color: var(--color-text-black);
+  }
+
+  & span {
+    & input {
+      color: var(--color-text-black);
+    }
+  }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"Главная страница - AURORA"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <section class="section main-sec1">
+      <div class="main-sec1__swiper swiper" id="swiper-4"  dir="rtl">
+        <ul class="main-sec1__swiper-wrapper swiper-wrapper list-reset">
+          <li class="main-sec1__swiper-slide swiper-slide">
+            @@include('html/components/slide-hero.html')
+          </li>
+          <li class="main-sec1__swiper-slide swiper-slide">
+            @@include('html/components/slide-hero.html')
+          </li>
+          <li class="main-sec1__swiper-slide swiper-slide">
+            @@include('html/components/slide-hero.html')
+          </li>
+          <li class="main-sec1__swiper-slide swiper-slide">
+            @@include('html/components/slide-hero.html')
+          </li>
+        </ul>
+        <div class="main-sec1__swiper-pagination swiper-pagination"></div>
+      </div>
+      <div class="main-sec1__container container">
+        <div class="main-sec1__swiper-2 swiper" id="swiper-8">
+          <ul class="main-sec1__swiper-wrapper-2 swiper-wrapper list-reset">
+            <li class="main-sec1__swiper-slide-2 swiper-slide">
+              <div class="main-sec1__content">
+                <h2 class="main-sec1__title">
+                  НОВЫЕ ЛАЗЕРНЫЕ СВЕТОДИОДНЫЕ фары
+                </h2>
+                @@include('html/components/btn1.html',{"text":"Подробнее"})
+                <div class="main-sec1__marker">
+                  @@include('html/components/marker.html')
+                </div>
+              </div>
+            </li>
+            <li class="main-sec1__swiper-slide-2 swiper-slide">
+              <div class="main-sec1__content">
+                <h2 class="main-sec1__title">
+                  Lorem ipsum dolor sit
+                </h2>
+                @@include('html/components/btn1.html',{"text":"Подробнее"})
+                <div class="main-sec1__marker">
+                  @@include('html/components/marker.html')
+                </div>
+              </div>
+            </li>
+            <li class="main-sec1__swiper-slide-2 swiper-slide">
+              <div class="main-sec1__content">
+                <h2 class="main-sec1__title">
+                  Lorem ipsum dolor.Lorem ipsum dolor
+                </h2>
+                @@include('html/components/btn1.html',{"text":"Подробнее"})
+                <div class="main-sec1__marker">
+                  @@include('html/components/marker.html')
+                </div>
+              </div>
+            </li>
+            <li class="main-sec1__swiper-slide-2 swiper-slide">
+              <div class="main-sec1__content">
+                <h2 class="main-sec1__title">
+                  Lorem ipsum dolor sit amet
+                </h2>
+                @@include('html/components/btn1.html',{"text":"Подробнее"})
+                <div class="main-sec1__marker">
+                  @@include('html/components/marker.html')
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section main-sec2">
+      <div class="main-sec2__contauner container">
+        <div class="main-sec2__content">
+          <ul class="main-sec2__list list-reset">
+            <li class="main-sec2__item">
+              @@include('html/components/card1.html',{"urlImg":"img/main-page/sec2/1.jpg","title":"ОСВЕЩЕНИЕ","btnText":"ПЕРЕЙТИ В&nbsp;КАТАЛОГ"})
+            </li>
+            <li class="main-sec2__item">
+              @@include('html/components/card1.html',{"urlImg":"img/main-page/sec2/2.jpg","title":"Электрика","btnText":"ПЕРЕЙТИ В&nbsp;КАТАЛОГ"})
+            </li>
+            <li class="main-sec2__item">
+              @@include('html/components/card1.html',{"urlImg":"img/main-page/sec2/3.jpg","title":"Кемпинг","btnText":"ПЕРЕЙТИ В&nbsp;КАТАЛОГ"})
+            </li>
+            <li class="main-sec2__item">
+              @@include('html/components/card1.html',{"urlImg":"img/main-page/sec2/4.jpg","title":"АКСЕССУАРЫ","btnText":"ПЕРЕЙТИ В&nbsp;КАТАЛОГ"})
+            </li>
+          </ul>
+          <div class="main-sec2__decor">
+            <a href="#">
+              <img src="img/main-page/sec1/NN.svg" alt="N">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section main-sec3">
+      <div class="main-sec3__container container">
+        <div class="main-sec3__content">
+          <div class="main-sec3__top">
+            @@include('html/components/section-title.html',{"title":"Идеально подойдет"})
+            <!--@@include('html/components/btn-swiper.html',{"classNext":"main-sec3__button-next","classPrev":"main-sec3__button-prev"})-->
+          </div>
+          <div class="main-sec3__swiper swiper" id="swiper-3">
+            <ul class="main-sec3__swiper-wrapper swiper-wrapper list-reset">
+              <li class="swiper-slide">
+                @@include('html/components/card2.html',{"urlImg":"img/main-page/sec3/1.jpg","btn2text":"Для внедорожников","urlImg1":"img/main-page/sec3/1.svg"})
+              </li>
+              <li class="swiper-slide">
+                @@include('html/components/card2.html',{"urlImg":"img/main-page/sec3/2.jpg","btn2text":"Для квадроциклов","urlImg1":"img/main-page/sec3/2.svg"})
+              </li>
+              <li class="swiper-slide">
+                @@include('html/components/card2.html',{"urlImg":"img/main-page/sec3/3.jpg","btn2text":"Для лодок, катеров","urlImg1":"img/main-page/sec3/3.svg"})
+              </li>
+              <li class="swiper-slide">
+                @@include('html/components/card2.html',{"urlImg":"img/main-page/sec3/4.jpg","btn2text":"Для мотоциклов","urlImg1":"img/main-page/sec3/4.svg"})
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section main-sec4">
+      <div class="main-sec4__container container">
+        <div class="main-sec4__content">
+          @@include('html/boxs/box-swiper1.html',{"section-title":"Хит продаж","classNext":"main-sec4__button-next","classPrev":"main-sec4__button-prev","idSwiper":"swiper-2"})
+        </div>
+      </div>
+    </section>
+    <section class="section main-sec5">
+      <div class="main-sec5__container container">
+        <div class="main-sec5__content">
+          @@include('html/boxs/box-swiper1.html',{"section-title":"Новинки","classNext":"main-sec5__button-next","classPrev":"main-sec5__button-prev","idSwiper":"swiper-1"})
+        </div>
+      </div>
+    </section>
+    <section class="section main-sec6">
+      <div class="main-sec6__container container">
+        <div class="main-sec6__content">
+          @@include('html/components/section-title.html',{"title":"О&nbsp;компании"})
+          <p class="main-sec6__desc">
+            www.szaurora.ru – официальный дистрибьютор компании AURORA на территории России. Полный модельный ряд дополнительного света, а так же аксессуаров от всемирно-известного бренда AURORA. Вы всегда можете найти на нашем сайте. Так же есть предложения для дилеров по лучшим ценам в России.
+          </p>
+          @@include('html/components/btn2.html',{"text":"Подробнее"})
+        </div>
+      </div>
+    </section>
+    <section class="section main-sec7">
+      <div class="main-sec7__container container">
+        <div class="main-sec7__content">
+          <div class="main-sec7__top">
+            @@include('html/components/section-title.html',{"title":"Новости"})
+            <a class="main-sec7__link" href="#">
+              Все новости
+            </a>
+          </div>
+          <ul class="main-sec7__list list-reset">
+            <li>
+              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/1.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/2.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/3.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/4.jpg"})
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

@@ -1,0 +1,17 @@
+.drop-down2 {
+  justify-content: start;
+
+  .drop-down1__btn {
+    padding: 12px 15px;
+    gap: clamp(10px, 2vw, 30px);
+    border: 1px solid var(--color-background-card);
+
+    span {
+      opacity: 0.8;
+    }
+
+    svg {
+      color: var(--color-background-yellow);
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.drop-down-catalog {
+  &__content-wrapp-2.active {
+    &::-webkit-scrollbar {
+      height: 7px;
+    }
+        
+    &::-webkit-scrollbar-track {
+      background-color: var(--color-background-card);
+    }
+        
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-background-yellow);
+    }
+  }
+  &__content-box {
+    &:hover {
+      background-color: #dcdcdc;
+      border-color: var(--color-text-black);
+    }
+  }
+
+  &__content-box.hovered-2, &__content-box.hovered{
+    background-color: #dcdcdc;
+    border-color: var(--color-text-black);
+  }
+
+  &__content-level-2 {
+    background-color: var(--color-background-path);
+
+    ul {
+      li {
+        a {
+          color: rgba(0, 0, 0, 0.6);
+
+          &:focus-visible,
+          &:hover,
+          &:active {
+            color: var(--color-text-black);
+          }
+        }
+      }
+    }
+  }
+
+  &__btn-2 {
+    color: var(--color-text-black);
+
+    span {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__item {
+    &.hovered {
+      background-color: #dcdcdc;
+      border-color: var(--color-text-black);
+
+      .drop-down-catalog__btn {
+        filter: brightness(1.5);
+      }
+    }
+  }
+
+  &__btn {
+    &:hover,
+    &:focus-visible,
+    &:active {
+      filter: brightness(0);
+    }
+
+    img {
+      filter: invert(1) brightness(0);
+    }
+
+    span {
+      color: var(--color-text-black);
+    }
+  }
+
+  .card1 {
+    position: relative;
+    padding: 42px 5px 5px;
+    min-width: 193px;
+    outline: 3px solid transparent;
+    transition: outline-color 0.4s ease-in-out;
+
+    &:hover {
+      outline-color: var(--color-background-yellow);
+    }
+  }
+
+  .card1__box-info {
+    padding: 6px 4px 3px 6px;
+  }
+
+  .card1__title {
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+
+  .btn1__text {
+    padding: 4px 10px;
+    font-size: 8px;
+  }
+
+  .btn1__box-svg {
+    padding: 0 6px;
+
+    svg {
+      width: 8px;
+      height: 7px;
+    }
+  }
+
+  &__content {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .drop-down-catalog {
+    &__menu {
+      padding: 10px 0;
+      width: 100%;
+    }
+    &__main-content {
+      display: none;
+    }
+    &__item {
+      padding-left: 0;
+      border-left: 1px solid transparent;
+    }
+    &__content-wrapp-2 {
+      ul {
+        li {
+          a {
+            color: rgba(0, 0, 0, 0.6);
+
+            &:hover, &:focus-visible, &:active {
+              color: var(--color-text-black);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}

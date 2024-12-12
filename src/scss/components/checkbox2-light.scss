@@ -1,0 +1,11 @@
+.checkbox2 {
+  &__input:checked + span {
+    color: var(--color-text-black);
+    background-color: var(--color-background-yellow);
+  }
+
+  span {
+    color: var(--color-text-black);
+    background-color: var(--color-background-card);
+  }
+}

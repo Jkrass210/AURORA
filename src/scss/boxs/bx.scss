@@ -1,0 +1,111 @@
+.bx-authform {
+    margin: auto;
+
+    .checkbox {
+        display: flex;
+        align-items: center;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--color-text-white);
+
+        .bx-filter-param-label {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}
+.bx-authform-formgroup-container input[type="submit"]{
+    padding: 30px;
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: var(--color-text-black);
+    border: 1px solid var(--colir-background-body);
+    background-color: var(--color-background-yellow);
+    transition: border-color 0.4s ease-in-out;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,
+    &:active,
+    &:hover {
+      border-color: var(--color-background-yellow);
+    }
+}
+.bx-title {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: 0.03em;
+    color: var(--color-text-white);
+}
+
+.bx-authform-content-container, .bx-authform-label-container {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-text-white);
+}
+.bx-authform-input-container input[type="text"], .bx-authform-input-container input[type="password"] {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid var(--colir-background-body);
+    background-color: var(--color-background-card);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-text-white);
+    transition: border-color 0.4s ease-in-out;
+
+    &:focus,
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+        border-color: var(--color-background-card);
+    }
+}
+.bx-authform-link-container {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-text-white);
+    text-align: center;
+    a {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--color-text-white);
+        transition: color 0.4s ease-in-out;
+
+        &:focus,
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:focus-visible,
+        &:hover,
+        &:active {
+            color: var(--color-background-yellow);
+        }
+    }
+}
+.bx-authform-description-container, .bx-authform-note-container {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-text-white);
+}

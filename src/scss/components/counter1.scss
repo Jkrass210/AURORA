@@ -1,0 +1,58 @@
+.counter1 {
+  width: 100%;
+  max-width: 107px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--akcent);
+
+  & button {
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--akcent);
+    transition: color 0.4s ease-in-out;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      color: var(--color-text-gray);
+    }
+  }
+
+  & span {
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & input {
+      pointer-events: none;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--akcent);
+
+      &:focus, &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .counter1 {
+    max-width: calc(100% - 2px);
+  }
+}

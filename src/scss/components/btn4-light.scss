@@ -1,0 +1,10 @@
+.btn4 {
+  color: var(--color-text-black);
+  background-color: var(--color-background-card);
+
+  &:focus-visible,
+  &:hover,
+  &:active {
+    background-color: var(--color-background-yellow);
+  }
+}

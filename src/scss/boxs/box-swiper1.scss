@@ -1,0 +1,10 @@
+.box-swiper1 {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__swiper-slide {
+    height: auto;
+  }
+}

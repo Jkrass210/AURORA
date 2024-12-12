@@ -1,0 +1,28 @@
+.personal-data {
+  &__desc-wrapp {
+    p {
+      color: var(--color-text-black);
+    }
+  }
+  &__list {
+    li {
+      label {
+        color: var(--color-text-black);
+      }
+
+      input,textarea {
+        color: var(--color-text-black);
+      }
+    }
+  }
+
+  &__cancel {
+    color: var(--color-text-black);
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      background-color: var(--color-background-card);
+    }
+  }
+}

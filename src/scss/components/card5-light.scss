@@ -1,0 +1,9 @@
+.card5 {
+  &__title {
+    color: var(--color-text-black);
+  }
+
+  &__desc {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

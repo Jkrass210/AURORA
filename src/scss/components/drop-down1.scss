@@ -1,0 +1,81 @@
+.drop-down1 {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: var(--color-text-card-desc);
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: var(--color-text-white);
+    transition: color 0.4s ease-in-out;
+    &.active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    svg {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      color: var(--color-text-card-desc);
+    }
+
+  }
+
+  &__list {
+    position: absolute;
+    top: calc( 100% + 8px);
+    z-index: 0;
+    background-color: var(--color-drop-gray3);
+    opacity: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.1) inset;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, z-index 0.4s ease-in-out;
+    &.active {
+      z-index: 3;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    li {
+      cursor: pointer;
+      user-select: none;
+      padding: 14px 30px;
+      transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+      &:hover,
+      &:active {
+        color: var(--color-text-white);
+        background-color: var(--color-drop-gray4);
+      }
+
+      &.active {
+        pointer-events: none;
+        color: var(--color-text-white);
+        background-color: var(--color-drop-gray4);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 235px;
+      height: 22px;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 1px solid var(--color-background-yellow);
+    }
+  }
+}

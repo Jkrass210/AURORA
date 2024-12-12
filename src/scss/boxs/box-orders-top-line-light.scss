@@ -1,0 +1,11 @@
+.box-orders-top-line {
+  &__order-box {
+    p:last-child {
+      color: var(--color-text-black);
+    }
+  }
+
+  &__date-box {
+    color: var(--color-btn-gray2);
+  }
+}

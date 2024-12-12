@@ -1,0 +1,28 @@
+.header {
+  &__list-link-bottom {
+    & a {
+      color: var(--color-text-black);
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .header {
+    &__nav {
+      background-color: var(--colir-background-body);
+    }
+
+    &__list {
+      a {
+        color: var(--color-text-black);
+      }
+    }
+
+    &__burger {
+      background-color: var(--color-text-black);
+      span {
+        background-color: var(--color-text-white);
+      }
+    }
+  }
+}

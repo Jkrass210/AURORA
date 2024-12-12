@@ -1,0 +1,38 @@
+.filters {
+  &__main-list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__main-item {
+    p {
+      margin-bottom: 16px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 135%;
+      color: var(--color-text-white);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .filters {
+    &__main-list {
+      gap: 10px;
+    }
+    &__main-item {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

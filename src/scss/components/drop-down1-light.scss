@@ -1,0 +1,17 @@
+.drop-down1 {
+  color: var(--color-drop-gray3);
+
+  &__btn {
+    color: var(--color-text-black);
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      color: var(--color-drop-gray3);
+    }
+  }
+
+  &__list {
+    background-color: var(--color-background-card);
+  }
+}

@@ -1,0 +1,20 @@
+.search-page {
+  .search-drop-down1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .search-page-2 {
+      .input-group {
+        display: flex;
+      }
+    }
+
+    .drop-down1 {
+      margin-bottom: 0;
+    }
+  }
+  .catalog-sec1__products-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

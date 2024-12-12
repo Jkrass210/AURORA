@@ -1,0 +1,28 @@
+.box-orders {
+  &__btn-close {
+    span {
+      background-color: var(--color-text-black);
+    }
+  }
+
+  &__desc-name {
+    color: var(--color-text-black);
+  }
+  &__price {
+    span:first-child {
+      color: var(--color-text-black);
+    }
+
+    span:last-child {
+      color: var(--color-btn-gray2);
+    }
+  }
+}
+
+.box-orders.current-orders {
+  .box-orders__price {
+    span:last-child {
+      color: var(--color-text-black);
+    }
+  }
+}
