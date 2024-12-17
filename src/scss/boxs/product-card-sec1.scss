@@ -15,12 +15,14 @@
   }
 
   &__swiper-slide {
+    box-sizing: border-box;
     min-width: 80px;
     height: auto;
-    background-color: var(--color-background-card);
   }
 
   &__box-img {
+    border-radius: 20px;
+    border: 1px solid var(--border1);
     position: relative;
     width: 100%;
     display: flex;
@@ -41,8 +43,10 @@
   }
 
   &__button-next, &__button-prev {
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
     min-width: 20px;
-    color: var(--color-text-white);
+    color: var(--akcent);
     background-color: var(--color-background-card);
     transition: opacity 0.4s ease-in-out;
 
@@ -70,7 +74,7 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 117%;
-    color: var(--color-background-yellow);
+    color: var(--gradient);
   }
 
   &__group-btn {
@@ -89,12 +93,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-text-white);
+    color: var(--akcent);
     width: 42px;
     min-width: 42px;
     height: 42px;
     border-radius: 100%;
-    border: 1px solid var(--color-drop-gray3);
+    border: 1px solid var(--akcent);
     transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
 
     &:focus,
@@ -105,8 +109,8 @@
     &:hover,
     &:focus-visible,
     &:active {
-      color: var(--color-background-yellow);
-      border-color: var(--color-background-yellow);
+      color: var(--color-text-gray);
+      border-color: var(--color-text-gray);
     }
   }
 
@@ -127,7 +131,7 @@
         font-weight: 600;
         font-size: 26px;
         letter-spacing: -0.05em;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
       }
 
       span:nth-child(2) {
@@ -170,7 +174,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
   }
 
   &__equipment-list {
@@ -180,8 +184,7 @@
 
     li.selected {
       button {
-      color: var(--color-text-black);
-      background-color: var(--color-background-yellow);
+      background-color: var(--knopka);
       }
     }
   }
@@ -212,7 +215,7 @@
         font-weight: 500;
         font-size: 15px;
         line-height: 120%;
-        color: var(--color-background-yellow);
+        color: var(--color-text-black);
       }
 
       &:last-child {
@@ -222,7 +225,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 120%;
-        color: var(--color-text-white);
+        color: var(--color-text-gray);
       }
     }
   }
@@ -244,7 +247,8 @@
 
   &__detailed-info {
     padding: 36px;
-    background-color: var(--color-background-card);
+    background-color: var(--fon2);
+    border-radius: 0 0 20px 20px;
   }
 
   &__box-content {
@@ -258,15 +262,15 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 120%;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
 
       span {
-        color: var(--color-text-white) !important;
+        color: var(--color-text-black) !important;
       }
     }
 
     div {
-      color: var(--color-text-white);
+      color: var(--color-text-black);
     }
 
     p:last-child {
@@ -278,9 +282,9 @@
     }
 
     ul li {
-      color: var(--color-text-white) !important;
+      color: var(--color-text-black) !important;
       span {
-        color: var(--color-text-white) !important;
+        color: var(--color-text-black) !important;
       }
     }
   }
@@ -333,6 +337,7 @@
   }
 
   &__btn-fasteners {
+    border-radius: 10px;
     white-space: nowrap;
     user-select: none;
     padding: 8px 10px;
@@ -341,7 +346,7 @@
     font-size: 14px;
     line-height: 135%;
     color: var(--color-text-white);
-    background-color: var(--color-btn-gray3);
+    background-color: var(--akcent);
     transition: color .4s ease-in-out, background-color .4s ease-in-out;
 
     /*&.active {
@@ -357,8 +362,7 @@
     &:focus-visible,
     &:hover,
     &:active {
-      color: var(--color-text-black);
-      background-color: var(--color-background-yellow);
+      background-color: var(--knopka);
     }
   }
 }

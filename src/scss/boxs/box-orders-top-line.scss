@@ -1,5 +1,6 @@
 .box-orders-top-line {
-  border: 5px solid var(--color-background-yellow);
+  border: 5px solid var(--color-text-black);
+  border-radius: 20px;
   padding: 20px;
   margin-bottom: 15px;
   display: flex;
@@ -27,7 +28,7 @@
       font-size: 20px;
       line-height: 60%;
       text-transform: uppercase;
-      color: var(--color-background-yellow);
+      color: var(--color-text-black);
     }
 
     p:last-child {
@@ -36,7 +37,7 @@
       font-size: 20px;
       line-height: 60%;
       text-transform: uppercase;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
     }
   }
 
@@ -44,7 +45,7 @@
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
-    color: var(--color-text-card-desc);
+    color: var(--color-text-gray);
   }
 
   &__right {

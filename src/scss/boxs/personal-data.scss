@@ -5,7 +5,7 @@
       font-family: var(--font-family);
       font-weight: 500;
       font-size: 16px;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
     }
   }
 
@@ -32,7 +32,7 @@
         font-family: var(--font-family);
         font-weight: 500;
         font-size: 20px;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
       }
 
       textarea {
@@ -41,6 +41,7 @@
       }
 
       input,textarea {
+        border-radius: 10px;
         padding: 10px;
         flex: 1;
         border: 1px solid var(--colir-background-body);
@@ -48,7 +49,7 @@
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 16px;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
         transition: border-color 0.4s ease-in-out;
 
         &:focus,
@@ -71,15 +72,16 @@
   }
 
   &__submit {
-    padding: 30px;
+    padding: 20px;
+    border-radius: 20px;
     width: calc(300 / 1310 * 100%);
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    color: var(--color-text-black);
+    color: var(--color-text-white);
     border: 1px solid var(--colir-background-body);
-    background-color: var(--color-background-yellow);
+    background-color: var(--color-text-black);
     transition: border-color 0.4s ease-in-out;
 
     &:focus,
@@ -90,19 +92,20 @@
     &:focus-visible,
     &:active,
     &:hover {
-      border-color: var(--color-background-yellow);
+      border-color: var(--color-text-black);
     }
   }
 
   &__cancel {
-    padding: 30px;
+    padding: 20px;
+    border-radius: 20px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     text-align: center;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
     transition: background-color 0.4s ease-in-out;
 
     &:focus,

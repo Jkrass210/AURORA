@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
-  background-color: var(--akcent);
+  background: linear-gradient(270deg, #111ea3 0%, #2984ff 50%, #111ea3 100%);
   transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   &:focus,
   &:focus-visible {
@@ -19,13 +19,8 @@
     .btn-catalog__icon {
       span {
         transform: scale(1.5);
-        background-color: var(--color-text-white);
       }
     }
-    .btn-catalog__text {
-      color: var(--color-text-white);
-    }
-    background-color: var(--knopka);
     border-color: var(--knopka);
   }
 
@@ -33,13 +28,8 @@
     .btn-catalog__icon {
       span {
         transform: scale(1.5);
-        background-color: var(--color-text-white);
       }
     }
-    .btn-catalog__text {
-      color: var(--color-text-white);
-    }
-    background-color: var(--color-text-black);
   }
 
   &__icon {

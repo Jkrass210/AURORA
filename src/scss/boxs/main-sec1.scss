@@ -89,7 +89,7 @@
     padding-top: 0;
     padding-bottom: 0;
     &__content {
-      padding: 126px 0 35px 0;
+      padding: 70px 0 35px 0;
     }
 
     &__title {
@@ -111,6 +111,12 @@
   }
 
   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 32px;
+    bottom: 0;
+  }
+
+  .main-sec1__swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 4px !important;
   }
 }

@@ -8,7 +8,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 120%;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
   }
 
   &__info {
@@ -43,7 +43,7 @@
           min-width: 8px;
           height: 8px;
           border-radius: 100%;
-          background-color: var(--color-background-yellow);
+          background-color: var(--color-text-gray);
         }
 
         a {
@@ -56,7 +56,7 @@
           &:focus-visible,
           &:hover,
           &:active {
-            color: var(--color-background-yellow);
+            color: var(--color-text-gray);
           }
         }
       }
@@ -64,6 +64,7 @@
   }
 
   &__map {
+    border-radius: 20px;
     margin-bottom: 40px;
     min-height: 300px;
     background-color: var(--color-background-card);
@@ -74,7 +75,7 @@
     font-weight: 800;
     font-size: 32px;
     letter-spacing: .03em;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
   }
 
   &__form.personal-data__form {

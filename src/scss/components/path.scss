@@ -1,6 +1,6 @@
 .path {
   padding: 30px 0;
-  background-color: var(--color-background-path);
+  background-color: var(--fon);
   transition: background-color 0.4s ease-in-out;
   
   &__list {
@@ -40,7 +40,7 @@
     a:focus-visible,
     a:hover,
     a:active {
-      color: var(--color-background-card);
+      color: var(--color-text-black);
     }
 
     span {

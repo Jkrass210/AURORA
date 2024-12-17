@@ -1,4 +1,5 @@
 .card5 {
+  border-radius: 20px;
   padding: 27px 16px;
   background-color: var(--color-background-card);
   height: 100%;
@@ -10,7 +11,7 @@
     font-weight: 600;
     font-size: 20px;
     letter-spacing: 0.03em;
-    color: var(--color-background-yellow);
+    color: var(--color-text-black);
   }
 
   &__desc {
@@ -18,6 +19,6 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.03em;
-    color: var(--color-text-card-desc);
+    color: var(--color-text-black);
   }
 }

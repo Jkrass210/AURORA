@@ -16,7 +16,7 @@
     font-size: 25px;
     line-height: 200%;
     text-transform: uppercase;
-    color: var(--color-text-white);
+    color: var(--akcent);
   }
 
   &__products {
@@ -35,13 +35,19 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 
+    .card1__box-info {
+      min-width: auto;
+    }
+
     li {
+      border-radius: 20px;
+      overflow: hidden;
       outline: 5px solid transparent;
       position: relative;
       transition: outline 0.4s ease-in-out;
 
       &:hover {
-        outline-color: var(--color-background-yellow);
+        outline-color: var(--color-text-black);
       }
 
       .card1 {

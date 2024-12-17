@@ -1,10 +1,11 @@
 .static-page-sec1 {
   &__content {
+    border-radius: 20px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 15px;
     line-height: 120%;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
     display: flex;
     flex-direction: column;
     padding: 32px 47px;
@@ -35,7 +36,7 @@
           min-width: 8px;
           height: 8px;
           border-radius: 100%;
-          background-color: var(--color-background-yellow);
+          background-color: var(--color-text-gray);
         }
 
         a {

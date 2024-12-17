@@ -3,16 +3,17 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  border-radius: 10px 10px 0 0;
   padding: 30px;
-  background-color: var(--color-background-card);
-  border-bottom: 1px solid var(--color-background-path);
+  background-color: var(--fon2);
+  border-bottom: 1px solid var(--border1);
   white-space: nowrap;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--color-text-white);
+  color: var(--color-text-black);
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 
   &:focus,
@@ -23,13 +24,13 @@
   &:hover,
   &:focus-visible,
   &:active {
-    color: var(--color-text-black);
-    background-color: var(--color-background-yellow);
+    color: var(--color-text-white);
+    background-color: var(--color-text-black);
   }
 
   &.active {
-    color: var(--color-text-black);
-    background-color: var(--color-background-yellow);
+    color: var(--color-text-white);
+    background-color: var(--color-text-black);
   }
 }
 

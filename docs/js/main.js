@@ -279,51 +279,6 @@ function initializeSwiperSwitcher({
   }
 }
 
-function switchTheme(theme) {
-  const currentLink = document.querySelector('link[href*="light.min.css"]');
-  
-  if (theme === 'light') {
-    if (!currentLink) {
-      const lightLink = document.createElement('link');
-      lightLink.rel = 'stylesheet';
-      lightLink.href = '/local/templates/ni/css/light.min.css';
-      lightLink.classList.add('theme-style');
-      document.head.appendChild(lightLink);
-    }
-  } else if (theme === 'dark') {
-    if (currentLink) {
-      currentLink.remove();
-    }
-  }
-}
-
-function saveThemeToLocalStorage(theme) {
-  localStorage.setItem('color-scheme', theme);
-}
-
-function getThemeFromLocalStorage() {
-  return localStorage.getItem('color-scheme') || 'dark';
-}
-
-function applySavedTheme() {
-  const savedTheme = getThemeFromLocalStorage();
-  document.querySelector(`.switcher__radio[value="${savedTheme}"]`).checked = true;
-  switchTheme(savedTheme);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  applySavedTheme();
-
-  const themeRadios = document.querySelectorAll('.switcher__radio');
-  themeRadios.forEach((radio) => {
-    radio.addEventListener('change', (e) => {
-      const selectedTheme = e.target.value;
-      switchTheme(selectedTheme);
-      saveThemeToLocalStorage(selectedTheme);
-    });
-  });
-});
-
 if (document.querySelector('a.btn5') && document.querySelector('.modal_del_card')) {
   toggleModal('a.btn5', '.modal_del_card','.modal_del_close','.modal_del');
 }

@@ -4,7 +4,7 @@
   
   &__top {
     padding: 10px 0;
-    background-color: var(--akcent);
+    background-color: var(--header-top);
   }
   
   &__content {
@@ -27,7 +27,7 @@
       font-family: var(--font-family);
       font-weight: 400;
       font-size: 14px;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
       transition: color 0.4s ease-in-out;
       
       &:focus,
@@ -54,7 +54,7 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.05em;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
     transition: color 0.4s ease-in-out;
 
     &:focus,
@@ -78,7 +78,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
       transition: color 0.4s ease-in-out;
 
       &:focus,
@@ -175,7 +175,7 @@
         font-weight: 500;
         font-size: 14px;
         text-transform: lowercase;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
       }
     }
 
@@ -262,7 +262,7 @@
   }
 }
 
-@media (max-width: 669px) {
+@media (max-width: 609px) {
   .header {
     &__box-left {
       .header__burger {

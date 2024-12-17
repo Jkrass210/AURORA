@@ -10,6 +10,7 @@
       flex: 1;
 
       a {
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,7 +23,7 @@
         font-size: 20px;
         line-height: 60%;
         text-transform: uppercase;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
         transition: border-color 0.4s ease-in-out;
 
         &:focus,
@@ -33,11 +34,11 @@
         &:focus-visible,
         &:hover,
         &:active {
-          border-color: var(--color-background-yellow);
+          border-color: var(--color-text-black);
         }
 
         &.active {
-          border-color: var(--color-background-yellow);
+          border-color: var(--color-text-black);
         }
       }
     }

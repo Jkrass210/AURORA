@@ -1,5 +1,6 @@
 .btn7 {
-  padding: 30px;
+  padding: 17px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,8 +9,8 @@
   font-weight: 500;
   font-size: 14px;
   text-align: center;
-  color: var(--color-text-black);
-  background-color: var(--color-background-yellow);
+  color: var(--color-text-white);
+  background-color: var(--akcent);
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 
   &:focus,
