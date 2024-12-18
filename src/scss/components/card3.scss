@@ -53,9 +53,11 @@
     }
   }
   &__box-content {
+    min-height: 35px;
     height: auto;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     justify-content: space-between;
   }
 
@@ -96,6 +98,7 @@
   }
 
   &__box-price {
+    height: 100%;
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -103,8 +106,11 @@
   }
 
   &__price {
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
 
     & span {
       font-family: var(--font-family);

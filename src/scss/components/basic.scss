@@ -27,9 +27,16 @@ img {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   min-width: 340px;
   font-family: "Gilroy", sans-serif;
   background-color: #fefefe;
+}
+
+.main {
+  flex: 1;
 }
 
 .section {

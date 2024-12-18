@@ -330,6 +330,30 @@ if (document.querySelectorAll(".product-card-sec1__item-tab .btn6") && document.
   });
 }
 
+if (document.getElementById('btnScroll')) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnScroll = document.getElementById('btnScroll');
+  
+    const toggleScrollButton = () => {
+      if (window.scrollY > document.documentElement.scrollHeight / 4) {
+        btnScroll.classList.add('active');
+      } else {
+        btnScroll.classList.remove('active');
+      }
+    };
+  
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    };
+
+    btnScroll.addEventListener('click', scrollToTop);
+
+    window.addEventListener('scroll', toggleScrollButton);
+  });
+}
 
 
 

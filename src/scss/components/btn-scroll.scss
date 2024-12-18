@@ -1,0 +1,49 @@
+.btn-scroll {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+  width: 43px;
+  min-width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: var(--akcent);
+  display: flex;
+  color: var(--color-text-white);
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotate(270deg);
+  transition: color 0.4s ease-in-out, visibility 0.4s ease-in-out, opacity 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5), 0 1px 2px rgba(255, 255, 255, .1) inset;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background-color: var(--color-btn-gray2);
+  }
+
+  &__box-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 669px) {
+  .btn-scroll {
+    bottom: 20px;
+    right: 20px;
+  }
+}

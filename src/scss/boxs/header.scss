@@ -124,6 +124,7 @@
     align-items: center;
 
     & a {
+      display: flex;
       color: var(--akcent);
       transition: color 0.4s ease-in-out;
 

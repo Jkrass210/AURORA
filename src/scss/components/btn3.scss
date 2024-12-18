@@ -19,6 +19,12 @@
     background-color: var(--akcent);
     transition: background-color 0.4s ease-in-out;
 
+    &.mess_not {
+      pointer-events: none;
+      background-color: transparent;
+      color: var(--color-btn-gray);
+    }
+
     &:focus,
     &:focus-visible {
       outline: none;

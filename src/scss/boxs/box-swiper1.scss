@@ -5,6 +5,7 @@
   }
 
   &__swiper-slide {
+    box-sizing: border-box;
     height: auto;
   }
 }
