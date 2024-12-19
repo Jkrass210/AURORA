@@ -145,9 +145,23 @@ img {
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
   min-width: 340px;
   font-family: "Gilroy", sans-serif;
   background-color: #fefefe;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .section {
@@ -923,6 +937,7 @@ body {
 }
 
 .card3__box-content {
+  min-height: 35px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -976,6 +991,7 @@ body {
 }
 
 .card3__box-price {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -989,6 +1005,7 @@ body {
 }
 
 .card3__price {
+  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1017,6 +1034,17 @@ body {
   line-height: 117%;
   text-decoration: line-through;
   color: var(--color-text-gray);
+}
+
+.card3__box-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 .counter1 {
@@ -1120,6 +1148,12 @@ body {
   background-color: var(--akcent);
   -webkit-transition: background-color 0.4s ease-in-out;
   transition: background-color 0.4s ease-in-out;
+}
+
+.btn3__btn.mess_not {
+  pointer-events: none;
+  background-color: transparent;
+  color: var(--color-btn-gray);
 }
 
 .btn3__btn:focus,
@@ -2630,6 +2664,7 @@ body {
 }
 
 .product-card-sec1__btn {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2647,6 +2682,12 @@ body {
   border: 1px solid var(--akcent);
   -webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.product-card-sec1__btn span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .product-card-sec1__btn:focus,
@@ -4476,6 +4517,10 @@ body {
   background-color: var(--color-background-card);
 }
 
+.static-page-sec1__content span {
+  color: var(--color-text-black) !important;
+}
+
 .static-page-sec1__content ul {
   margin: 0;
   padding: 0;
@@ -4525,7 +4570,7 @@ body {
 .static-page-sec1__content ul li a:focus-visible,
 .static-page-sec1__content ul li a:hover,
 .static-page-sec1__content ul li a:active {
-  color: var(--color-background-yellow);
+  color: var(--color-text-black);
 }
 
 .static-page-sec1__content h1,
@@ -4537,7 +4582,7 @@ body {
   font-weight: 800;
   font-size: 32px;
   letter-spacing: 0.03em;
-  color: var(--color-text-white);
+  color: var(--color-text-black);
 }
 
 .contacts-sec1__top {
@@ -4894,7 +4939,30 @@ body {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  color: var(--color-text-white);
+  color: var(--color-text-black);
+}
+
+.bx-sbb-empty-cart-desc {
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: var(--color-text-black);
+}
+
+.bx-sbb-empty-cart-desc a {
+  cursor: pointer;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.bx-sbb-empty-cart-desc a:focus,
+.bx-sbb-empty-cart-desc a:focus-visible {
+  outline: none;
+}
+
+.bx-sbb-empty-cart-desc a:focus-visible,
+.bx-sbb-empty-cart-desc a:hover,
+.bx-sbb-empty-cart-desc a:active {
+  color: var(--color-text-gray);
 }
 
 .btn-scroll {

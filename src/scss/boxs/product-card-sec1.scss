@@ -90,6 +90,7 @@
   }
 
   &__btn {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,6 +101,10 @@
     border-radius: 100%;
     border: 1px solid var(--akcent);
     transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+
+    span {
+      display: flex;
+    }
 
     &:focus,
     &:focus-visible {

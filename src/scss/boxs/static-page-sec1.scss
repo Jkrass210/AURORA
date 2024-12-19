@@ -13,6 +13,10 @@
     gap: 20px;
     background-color: var(--color-background-card);
 
+    span {
+      color: var(--color-text-black) !important;
+    }
+
     ul {
       margin: 0;
       padding: 0;
@@ -49,7 +53,7 @@
           &:focus-visible,
           &:hover,
           &:active {
-            color: var(--color-background-yellow);
+            color: var(--color-text-black);
           }
         }
       }
@@ -61,7 +65,7 @@
       font-weight: 800;
       font-size: 32px;
       letter-spacing: .03em;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
     }
   }
 }
