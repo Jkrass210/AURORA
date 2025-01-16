@@ -17,8 +17,47 @@
     transition: outline-color 0.4s ease-in-out;
     border-radius: 30px;
   }
+
+  &__item::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 92px;
+    min-width: 92px;
+    height: 92px;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+  }
+
+  &__item:first-child::before {
+    bottom: -15px;
+    right: -15px;
+    border-radius: 100% 0 0 0;
+  }
+
+  &__item:nth-child(2)::before {
+    bottom: -15px;
+    left: -15px;
+    border-radius: 0 100% 0 0;
+  }
+
+  &__item:nth-child(3)::before {
+    top: -15px;
+    right: -15px;
+    border-radius: 0 0 0 100%;
+  }
+
+  &__item:nth-child(4)::before {
+    top: -15px;
+    left: -15px;
+    border-radius: 0 0 100% 0;
+  }
+
   &__item:hover {
     outline: 5px solid var(--akcent);
+    &::before {
+      background-color: var(--akcent);
+    }
   }
 
   &__item:nth-child(2n) .card1 {
@@ -47,11 +86,13 @@
     & a {
       display: flex;
       align-items: center;
-      width: 137px;
-      min-width: 137px;
-      height: 137px;
+      width: 133px;
+      min-width: 133px;
+      height: 133px;
+      border: 2px solid var(--colir-background-body);
       border-radius: 100%;
       background-color: var(--akcent);
+      transition: border-color 0.4s ease-in-out;
 
       img {
         margin-left: 10px;
@@ -65,7 +106,7 @@
       &:hover,
       &:focus-visible,
       &:active {
-        outline: 2px solid var(--akcent);
+        border-color: var(--akcent);
       }
     }
   }

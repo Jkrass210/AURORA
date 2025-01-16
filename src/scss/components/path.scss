@@ -40,6 +40,9 @@
     a:focus-visible,
     a:hover,
     a:active {
+      span {
+        color: var(--color-text-black);
+      }
       color: var(--color-text-black);
     }
 

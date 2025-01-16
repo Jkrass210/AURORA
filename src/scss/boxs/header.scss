@@ -123,6 +123,29 @@
     gap: 15px;
     align-items: center;
 
+    li {
+      position: relative;
+
+      .product-counter {
+        pointer-events: none;
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        width: 15px;
+        min-width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 8px;
+        color: var(--color-text-white);
+        background-color: var(--color-text-black);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .5), 0 1px 2px rgba(255, 255, 255, .1) inset;
+      }
+    }
+
     & a {
       display: flex;
       color: var(--akcent);

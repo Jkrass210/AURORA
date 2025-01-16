@@ -1,4 +1,20 @@
 .catalog-sec1 {
+  &__top-line {
+    margin-bottom: 10px;
+    .btn2 {
+      &__text {
+        white-space: nowrap;
+      }
+    }
+  }
+  &__top-line-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+    }
+  }
   &__content {
     display: flex;
     gap: 20px;
@@ -102,6 +118,16 @@
 
 @media (max-width: 950px) {
   .catalog-sec1 {
+    &__top-line-list {
+      flex-wrap: nowrap;
+      overflow: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
     &__list-catalog {
       grid-template-columns: 1fr 1fr;
     }

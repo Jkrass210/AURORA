@@ -1,0 +1,96 @@
+.box-double-catalog {
+  margin-bottom: 20px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+
+      .level-3__link {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 135%;
+        color: var(--color-text-black);
+        transition: color 0.4s ease-in-out;
+
+        &:focus,&:focus-visible {
+          outline: none;
+        }
+
+        &:focus-visible,&:hover,&:active {
+          color: var(--knopka);
+        }
+
+        &.selecd {
+          color: var(--knopka);
+        }
+      }
+    }
+
+    &.level-2 {
+      border-radius: 10px;
+      padding: 5px;
+      background-color: #d7d6d6;
+    }
+    
+    &.level-3{
+      padding:5px 10px 10px;
+    }
+
+    &.level-2,&.level-3 {
+      display: none;
+    }
+  }
+
+  &__btn-1, &__btn-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: 30px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 135%;
+    padding: 8px 10px;
+    color: var(--color-text-black);
+    background-color: var(--color-background-card);
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-text-white);
+      background-color: var(--knopka);
+    }
+
+    svg {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    &.active {
+      svg {
+        transform: rotate(180deg);
+      }
+
+      & + .level-2 {
+        display: flex;
+      }
+
+      & + .level-3 {
+        display: flex;
+      }
+    }
+
+    &.selecd {
+      background-color: var(--knopka);
+      color: var(--color-text-white);
+    }
+  }
+}
