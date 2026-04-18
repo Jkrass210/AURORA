@@ -1,4 +1,7 @@
 .personal-data {
+  h3 {
+    color: var(--color-text-black);
+  }
   &__desc-wrapp {
     margin-bottom: 40px;
     p {
@@ -19,6 +22,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    small {
+      color: var(--color-text-black) !important;
+    }
 
     li {
       display: flex;

@@ -4,6 +4,28 @@
   justify-content: space-between;
   gap: 20px;
   height: 100%;
+  &__swiper-pagination {
+    width: 80% !important;
+    left: 50% !important;
+    transform: translate3d(-50%, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    bottom: 15px !important;
+    .swiper-pagination-bullet {
+      margin: 0 2px !important;
+      background: var(--header-top);
+      opacity: 1;
+      transition: background 0.4s ease-in-out;
+      &.swiper-pagination-bullet-active {
+        background: var(--color-text-black);
+      }
+    }
+  }
+  &__link-crd-1 {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
   &__box-img {
     overflow: hidden;
     border-radius: 20px;
@@ -13,6 +35,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-height: 313px;
     background-color: var(--fon);
 
     picture {
@@ -25,7 +48,7 @@
       padding-top: 100%;
     }
 
-    button {
+    /*button {
       width: 26px;
       height: 26px;
       min-width: 26px;
@@ -55,8 +78,160 @@
       &:active {
         color: var(--color-btn-gray2);
       }
+    }*/
+  }
+
+  &__swiper-slide {
+    margin: auto;
+  }
+  
+  &__btn-card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+    
+    .btn-like {
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      color: var(--color-text-black);
+
+      &.active {
+        color: var(--color-text-black);
+        svg {
+          fill: var(--color-btn-gray2);
+        }
+      }
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+
+      &:focus-visible,
+      &:hover,
+      &:active {
+        color: var(--color-btn-gray2);
+      }
+    }
+
+    .btn-compare {
+      cursor: pointer;
+      width: 26px;
+      height: 26px;
+      min-width: 26px;
+      align-items: center;
+      background-color: transparent;
+      border-radius: 100%;
+      justify-content: center;
+      display: flex;
+      color: var(--color-text-black);
+      input {
+        opacity: 0;
+        visibility: hidden;
+      }
+      &:has(input:checked) {
+        background-color: var(--color-btn-gray2);
+      }
+      input:checked + svg {
+        color: var(--color-text-white);
+      }
+
+      &.active {
+        background-color: var(--color-btn-gray2);
+        color: var(--color-text-white);
+      }
+
+      &:focus,
+      &:focus-visible {
+        outline: none;
+      }
+
+      &:focus-visible,
+      &:hover,
+      &:active {
+        background-color: var(--color-btn-gray2);
+        color: var(--color-text-white);
+      }
     }
   }
+
+  &__hit-card-group {
+    width: 86px;
+    height: 86px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    .hit-card-block {
+      width: 0;
+      height: 0;
+      border-right: 86px solid transparent;
+      border-top: 86px solid var(--border);
+    }
+    .hit-card-text {
+      font-family: var(--font-family);
+      font-size: 14px;
+      position: absolute;
+      transform: rotate(-45deg);
+      text-align:  center;
+      top: 11px;
+      left: -2px;
+      font-weight: 500;
+      line-height: 15px;
+      color: var(--color-text-white);
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__label-new {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    p {
+      padding: 10px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      border-radius: 10px 10px 10px 0;
+      color: var(--color-text-white);
+      background-color: var(--border);
+    }
+  }
+
+  &__icon-card-group {
+    position: absolute;
+    bottom: 15px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    left: 0;
+    gap: 3px;
+    .text {
+      font-family: var(--font-family);
+      font-size: 14px;
+      color: var(--border);
+      font-weight: 600;
+    }
+    .bottom-info {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  }
+
   &__box-content {
     min-height: 35px;
     height: auto;
@@ -123,16 +298,31 @@
       font-size: 16px;
       line-height: 87%;
       color: var(--akcent);
+      &.price_current {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 87%;
+        color: var(--akcent);
+      }
+      &.price_old {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 117%;
+        text-decoration: line-through;
+        color: var(--color-text-gray);
+      }
     }
 
-    & span:last-child {
+    /*& span:last-child {
       font-family: var(--font-family);
       font-weight: 400;
       font-size: 12px;
       line-height: 117%;
       text-decoration: line-through;
       color: var(--color-text-gray);
-    }
+    }*/
   }
 
   &__box-bottom {
@@ -141,13 +331,28 @@
     gap: 20px;
   }
 }
+@media (max-width: 1440px) {
+  .card3 {
+    &__box-img {
+      max-height: calc(277px + (313 - 277) * ((100vw - 1200px) / (1440 - 1200)));
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .card3 {
+    &__box-img {
+      max-height: calc(237px + (277 - 237) * ((100vw - 1030px) / (1200 - 1030)));
+    }
+  }
+}
 
 @media (max-width: 1030px) {
   .card3 {
     &__box-img {
+      max-height: calc(200px + (237 - 200) * ((100vw - 670px) / (1030 - 670)));
       margin-bottom: 11px;
     }
-
     &__link-card {
       font-size: 12px;
     }
@@ -155,6 +360,41 @@
     &__box-price {
       flex-direction: column;
       align-items: stretch;
+    }
+
+    &__hit-card-group {
+      width: 76px;
+      height: 76px;
+      .hit-card-block {
+        border-right: 76px solid transparent;
+        border-top: 76px solid var(--border);
+      }
+      .hit-card-text {
+        font-size: 12px;
+        top: 8px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .card3 {
+    &__box-img {
+      max-height: calc(151px + (200 - 151) * ((100vw - 340px) / (670 - 340)));
+    }
+    &__label-new {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .card3 {
+    &__box-img {
+      max-height: 151px;
     }
   }
 }

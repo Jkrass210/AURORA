@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/components/head.html',{"title":"registration"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"Регистрация"})
+    <section class="section box-form-2 registration">
+      <div class="box-form-1__container container">
+        <div class="box-form-1__content">
+          <h2 class="box-form-1__title">Регистрация</h2>
+          <ul class="personal-account__list-points list-reset">
+            <li>
+              <a href="#" class="active" id="person">Физ. лицо</a>
+            </li>
+            <li>
+              <a href="#" id="legalBody">Юр. лицо</a>
+            </li>
+          </ul>
+          <div class="box-registration">
+            <form class="box-form-1__form active" accept="#" method="post" for-link="person">
+              <ul class="box-form-1__list list-reset">
+                <li>
+                  <input class="box-form-1__input" type="text" name="name" placeholder="Логин (мин. 3 символа)*">
+                </li>
+                <li>
+                  <input class="box-form-1__input" type="text" name="email" placeholder="Email*">
+                </li>
+                <li>
+                  <input class="box-form-1__input" type="password" placeholder="Пароль*">
+                </li>
+                <li>
+                  <input class="box-form-1__input" type="password" placeholder="Подтверждение пароля*">
+                </li>
+                <li class="captcha">
+                  <div class="captcha-box">
+                    <input type="hidden">
+                    <img src="img/captcha.jpeg">
+                  </div>
+                  <div class="captcha-box">
+                    <input class="box-form-1__input" type="text" placeholder="Введите слово на картинке*">
+                  </div>
+                </li>
+                <li>
+                  <button class="btn3__btn btn-reset">Регистрация</button>
+                </li>
+              </ul>
+            </form>
+            <form class="box-form-1__form" accept="#" method="post" for-link="legalBody">
+              <ul class="box-form-1__list list-reset">
+                <li>
+                  <input class="box-form-1__input" type="text" name="name" placeholder="Логин (мин. 3 символа)*">
+                </li>
+                <li>
+                  <input class="box-form-1__input" type="text" name="email" placeholder="Email*">
+                </li>
+                <li>
+                  <input class="box-form-1__input" type="password" placeholder="Пароль*">
+                </li>
+                <li>
+                  <input class="box-form-1__input" type="password" placeholder="Подтверждение пароля*">
+                </li>
+                <li class="captcha">
+                  <div class="captcha-box">
+                    <input type="hidden">
+                    <img src="img/captcha.jpeg">
+                  </div>
+                  <div class="captcha-box">
+                    <input class="box-form-1__input" type="text" placeholder="Введите слово на картинке*">
+                  </div>
+                </li>
+                <li>
+                  <button class="btn3__btn btn-reset">Регистрация</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="box-form-2__box-hints">
+            <p>Пароль должен быть не менее 6 символов длиной.</p>
+            <p>*Поля, обязательные для заполнения.</p>
+          </div>
+          <div class="box-form-2__box-error">
+            <p>Ohheef woehdf ofokwn wfhwef</p>
+            <p>Ohheef woehdf ofokwn wfhwef</p>
+            <p>Ohheef woehdf ofokwn wfhwef</p>
+            <p>Ohheef woehdf ofokwn wfhwef</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

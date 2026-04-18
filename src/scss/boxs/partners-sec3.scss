@@ -1,0 +1,48 @@
+.partners-sec3 {
+  &__container {
+    display: flex;
+    gap: calc(60 / 1310 * 100%);
+  }
+  &__left {
+    width: calc(646 / 1310 * 100%);
+  }
+  &__right {
+    flex: 1;
+  }
+  &__title {
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 108%;
+    text-transform: uppercase;
+    color: var(---color-text-black);
+  }
+  &__info {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(---color-text-black);
+  }
+}
+@media (max-width: 1030px) {
+  .partners-sec3 {
+    &__container {
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__left {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 17px;
+      font-size: 30px;
+    }
+    &__info {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

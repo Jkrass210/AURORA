@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Корзина</title>
-  <link href="css/normalize.min.css?_v=20250116093924" rel="stylesheet">
-  <link href="css/swiper-bundle.min.css?_v=20250116093924" rel="stylesheet">
-  <link href="css/style.min.css?_v=20250116093924" rel="stylesheet">
+  <link href="css/normalize.min.css?_v=20251001111615" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css?_v=20251001111615" rel="stylesheet">
+  <link href="css/style.min.css?_v=20251001111615" rel="stylesheet">
 
-  <script src="js/swiper-bundle.min.js?_v=20250116093924" defer></script>
-  <script src="js/swiper-bundle.min.js.map?_v=20250116093924" defer></script>
-  <script src="js/fslightbox-min.js?_v=20250116093924" defer></script>
-  <script type="module" src="js/main-min.js?_v=20250116093924"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20251001111615" defer></script>
+  <script src="js/cleave-min.js?_v=20251001111615" defer></script>
+  <script src="js/swiper-bundle.min.js?_v=20251001111615" defer></script>
+  <script src="js/fslightbox-min.js?_v=20251001111615" defer></script>
+  <script type="module" src="js/main-min.js?_v=20251001111615"></script>
 </head>
 <body>
-  <header class="header" id="header">
+  <header class="header fixed" id="header">
 	<div class="header__top">
 		<div class="container header__container">
 			<div class="header__content">
@@ -137,7 +138,7 @@
 						</li>
 						<li>
 							<a href="#">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<svg width="19" height="19" viewBox="0 0 19 19" fill="none">
 									<use xlink:href="img/sprite.svg#111"></use>
 								</svg>
 							</a>
@@ -2242,6 +2243,69 @@
       </div>
     </div>
   </div>
+  <div class="cookie" id="messageCookie">
+  <div class="cookie__container container">
+    <div class="cookie__conent">
+      <form class="cookie__form">
+        <div class="left">
+          <img src="img/cookie.svg" alt="cookie">
+          <p>Мы используем файлы <a href="#">cookie</a> для вашего удобства пользования сайтом и повышения качества
+            рекомендаций</p>
+        </div>
+        <div class="right">
+          <a href="#" target="_blank" class="btn3__btn more cookie__btn">
+            Подробнее
+          </a>
+          <button class="btn3__btn btn-reset cookie__btn" id="btnCookie">
+            Согласен
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cookieMessage = document.getElementById('messageCookie');
+      const cookieBtn = document.getElementById('btnCookie');
+      const storageKey = 'cookieAccepted';
+      const hideDuration = 60 * 60 * 1000; // 1 час
+
+      // Проверяем, был ли уже принят cookie
+      const isCookieAccepted = localStorage.getItem(storageKey);
+      const lastHideTime = localStorage.getItem(`${storageKey}_time`);
+
+      // Если cookie принят и не прошла неделя — скрываем блок
+      if (isCookieAccepted && lastHideTime) {
+        const currentTime = new Date().getTime();
+        if (currentTime - lastHideTime < hideDuration) {
+          cookieMessage.style.display = 'none';
+        } else {
+          // Если неделя прошла — удаляем запись
+          localStorage.removeItem(storageKey);
+          localStorage.removeItem(`${storageKey}_time`);
+        }
+      }
+
+      // Обработчик клика на кнопку "Согласен"
+      cookieBtn.addEventListener('click', function (e) {
+        e.preventDefault(); // Отменяем отправку формы (если она есть)
+        cookieMessage.style.display = 'none';
+
+        // Сохраняем в localStorage время закрытия
+        localStorage.setItem(storageKey, 'true');
+        localStorage.setItem(`${storageKey}_time`, new Date().getTime());
+      });
+    });
+  </script>
+</div>
+  <div class="modal-discount" id="modalDiscount">
+  <div class="modal-discount__window">
+    <button class="modal-discount__close btn-reset"></button>
+    <a href="#" class="modal-discount__link">
+      <picture><source srcset="img/modal-discount/1.webp" type="image/webp"><img src="img/modal-discount/1.png" alt="img"></picture>
+    </a>
+  </div>
+</div>
 </footer>
 </body>
 </html>

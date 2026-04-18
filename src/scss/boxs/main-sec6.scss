@@ -1,6 +1,7 @@
 .main-sec6 {
   padding: 0 0;
   background-color: var(--color-background-about);
+
   .section-title {
     color: var(--color-text-white);
   }
@@ -9,13 +10,38 @@
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 50%;
-    background-image: url('../img/main-page/sec6/beac1.png');
-    background-repeat: no-repeat;
-    background-position: bottom right -50px;
-    background-size: contain;
+    overflow: hidden;
+    position: relative;
+    //background-image: url('../img/main-page/sec6/beac1.png');
+    //background-repeat: no-repeat;
+    //background-position: bottom right -50px;
+    //background-size: contain;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 0;
+      background-image: url('../img/main-page/sec6/beac1.png');
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: contain;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::before {
+      transform: scale(1.05);
+    }
+
+    .btn2 {
+      position: relative;
+    }
   }
 
   &__desc {
+    position: relative;
     margin-bottom: 30px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -29,11 +55,15 @@
 @media (max-width: 1030px) {
   .main-sec6 {
     padding: 0;
+
     &__content {
       padding-top: 40px;
       padding-bottom: 40px;
       padding-right: 0;
       background-image: none;
+      &::before {
+        display: none;
+      }
     }
 
     &__desc {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"Акции"})
+
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"Акции"})
+    <section class="section stocks-page">
+      <div class="stocks-page__container container">
+        <div class="stocks-page__top-line">
+          <h1 class="section-title">Акции</h1>
+        </div>
+        <div class="stocks-page__box-desc">
+          <p>Промо-акция — это разновидность рекламной активности, при которой происходит прямой контакт с потребителем товаров или услуг. Во время этого контакта потенциальный покупатель получает информацию о товаре, услуге, условиях акций и скидках.</p>
+          <p>Общая цель проведения промо-акций всегда одна — увеличение продаж. Но достигаться эта цель может путем реализации различных задач. В зависимости от поставленных задач, выбирается механика планируемой промо-акции.</p>
+        </div>
+        <div class="stocks-page__wrapper">
+          <div class="stocks-page__top-line-points">
+            <div class="stocks-page__box-hidden-mobile">
+              <button class="stocks-page__btn-hidden-mobile btn-reset"></button>
+            </div>
+            <ul class="personal-account__list-points list-reset">
+              <li>
+                <a href="#" class="active">За все время</a>
+              </li>
+              <li>
+                <a href="#">2020</a>
+              </li>
+              <li>
+                <a href="#">2021</a>
+              </li>
+            </ul>
+          </div>
+          <div class="stocks-page__list-stocks">
+            <ul class="stocks-page__main-list list-reset">
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/1.jpg","markerText":"-15%","textData":"До 15 февраля 2020 года","title":"Ликвидация склада: 2 по цене 1 для садоводов"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/2.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/3.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику Скидки 15% на всю электронику Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/3.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику Скидки 15% на всю электронику Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks-1.html',{"urlImg":"img/stocks-page/4.jpg","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику Скидки 15% на всю электронику Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/3.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику Скидки 15% на всю электронику Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/1.jpg","markerText":"-15%","textData":"До 15 февраля 2020 года","title":"Ликвидация склада: 2 по цене 1 для садоводов"})
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

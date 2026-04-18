@@ -1,0 +1,28 @@
+.catalog-sec1__products.compare-page {
+  width: 100%;
+
+  .catalog-compare-table.table-responsive {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      height: 7px;
+    }
+        
+    &::-webkit-scrollbar-track {
+      border-radius: 100px;
+      background-color: var(--color-background-card);
+    }
+        
+    &::-webkit-scrollbar-thumb {
+      border-radius: 100px;
+      background-color: var(--color-text-gray);
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .catalog-sec1__products.compare-page .catalog-compare-table.table-responsive {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-gray) var(--color-background-card);
+  }
+}

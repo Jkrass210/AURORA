@@ -9,7 +9,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 135%;
-  color: var(--color-text-card-desc);
+  color: var(--knopka);
 
   &__btn {
     display: flex;
@@ -19,7 +19,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 135%;
-    color: var(--color-text-white);
+    color: var(--color-text-black);
     transition: color 0.4s ease-in-out;
     &.active {
       svg {
@@ -39,16 +39,18 @@
     &:focus-visible,
     &:hover,
     &:active {
-      color: var(--color-text-card-desc);
+      color: var(--knopka);
     }
 
   }
 
   &__list {
+    border-radius: 10px;
+    overflow: hidden;
     position: absolute;
     top: calc( 100% + 8px);
     z-index: 0;
-    background-color: var(--color-drop-gray3);
+    background-color: var(--color-btn-gray);
     opacity: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.1) inset;
     visibility: hidden;
@@ -68,13 +70,13 @@
       &:hover,
       &:active {
         color: var(--color-text-white);
-        background-color: var(--color-drop-gray4);
+        background-color: var(--knopka);
       }
 
       &.active {
         pointer-events: none;
         color: var(--color-text-white);
-        background-color: var(--color-drop-gray4);
+        background-color: var(--knopka);
       }
     }
   }

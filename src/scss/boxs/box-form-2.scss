@@ -1,0 +1,86 @@
+.box-form-2 {
+  .box-form-1__content {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .box-form-1__list {
+    margin-bottom: 0;
+    flex-direction: column;
+    li {
+      max-width: 100%;
+      width: 100%;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      text-align: center;
+      .btn3__btn {
+        padding: 20px;
+        max-width: 100%;
+        width: 100%;
+      }
+      picture {
+        display: flex;
+      }
+      img {
+        width: 100%;
+        height: 60px;
+        border: 2px solid var(--color-btn-gray);
+        border-radius: 10px;
+      }
+      &.captcha {
+        display: flex;
+        gap: 5px;
+        .captcha-box {
+          flex: 1;
+        }
+      }
+    }
+  }
+  &__box-error {
+    padding-top: 20px;
+    p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      color: red;
+    }
+  }
+  &__box-hints {
+    padding-top: 20px;
+    p {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--p-text);
+    }
+  }
+  .personal-account__list-points {
+    margin-bottom: 20px;
+    li {
+      a {
+        padding: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 669px) {
+  .box-form-2 {
+    .box-form-1__list {
+      li {
+        .btn3__btn {
+          max-width: 100%;
+        }
+        &.captcha {
+          max-height: 100%;
+          flex-direction: column;
+          .captcha-box {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

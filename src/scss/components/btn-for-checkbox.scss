@@ -1,0 +1,37 @@
+.btn-for-checkbox {
+  min-width: 100px;
+  min-height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: var(--color-text-white);
+  background-color: var(--knopka);
+  opacity: 0.5;
+  pointer-events: none;
+  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+  &:focus,&:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible,&:hover,&:active {
+    color: var(--color-text-white);
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: var(--akcent);
+    color: var(--color-text-white);
+    &:focus-visible,&:hover,&:active {
+      background-color: var(--knopka);
+    }
+  }
+}

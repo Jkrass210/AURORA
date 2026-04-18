@@ -7,8 +7,9 @@
     <section class="section main-sec1">
       <div class="main-sec1__swiper swiper" id="swiper-4"  dir="rtl">
         <ul class="main-sec1__swiper-wrapper swiper-wrapper list-reset">
-          <li class="main-sec1__swiper-slide swiper-slide">
+          <li class="main-sec1__swiper-slide video swiper-slide">
             @@include('html/components/slide-hero.html')
+            @@include('html/components/slide-hero-video.html')
           </li>
           <li class="main-sec1__swiper-slide swiper-slide">
             @@include('html/components/slide-hero.html')
@@ -124,6 +125,9 @@
         </div>
       </div>
     </section>
+
+    @@include('html/boxs/box-main-img.html')
+
     <section class="section main-sec4">
       <div class="main-sec4__container container">
         <div class="main-sec4__content">
@@ -149,6 +153,9 @@
         </div>
       </div>
     </section>
+
+    @@include('html/boxs/box-video.html')
+
     <section class="section main-sec7">
       <div class="main-sec7__container container">
         <div class="main-sec7__content">
@@ -160,21 +167,50 @@
           </div>
           <ul class="main-sec7__list list-reset">
             <li>
-              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/1.jpg"})
+              @@include('html/components/card4-main.html',{"urlImg":"img/main-page/sec7/1.jpg"})
             </li>
             <li>
-              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/2.jpg"})
+              @@include('html/components/card4-main.html',{"urlImg":"img/main-page/sec7/2.jpg"})
             </li>
             <li>
-              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/3.jpg"})
+              @@include('html/components/card4-main.html',{"urlImg":"img/main-page/sec7/3.jpg"})
             </li>
             <li>
-              @@include('html/components/card4.html',{"urlImg":"img/main-page/sec7/4.jpg"})
+              @@include('html/components/card4-main.html',{"urlImg":"img/main-page/sec7/4.jpg"})
             </li>
           </ul>
         </div>
       </div>
     </section>
+
+
+    <section class="section main-sec7 main-stocks">
+      <div class="main-sec7__container container">
+        <div class="main-sec7__content">
+          <div class="main-sec7__top">
+            @@include('html/components/section-title.html',{"title":"Акции"})
+            <a class="main-sec7__link" href="#">
+              Все акции
+            </a>
+          </div>
+          <ul class="main-stocks__list list-reset">
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/1.jpg","markerText":"-15%","textData":"До 15 февраля 2020 года","title":"Ликвидация склада: 2 по цене 1 для садоводов"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/2.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/3.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику Скидки 15% на всю электронику Скидки 15% на всю электронику"})
+              </li>
+              <li>
+                @@include('html/components/card-stocks.html',{"urlImg":"img/stocks-page/3.jpg","markerText":"до -50%","textData":"9.09.2019 - 18.02.2020","title":"Скидки 15% на всю электронику Скидки 15% на всю электронику Скидки 15% на всю электронику"})
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
   </main>
   @@include('html/boxs/footer.html')
 </body>

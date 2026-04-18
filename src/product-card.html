@@ -6,6 +6,7 @@
   <main class="main">
     @@include('html/components/path1.html',{"text":"Каталог","text1":"Аккумулятор NITECORE NL1834 18650 3.7v 3400mA"})
     <section class="section product-card-sec1">
+      @@include('html/boxs/box-product-line.html')
       <div class="product-card-sec1__container container">
         <div class="product-card-sec1__content">
           <div class="product-card-sec1__box-left">
@@ -153,7 +154,67 @@
                   </div>
                 </div>
               </div>
+
+              <a class="btn-for-checkbox" href="#">
+                <span>
+                  jdfjdfh
+                </span>
+              </a>
+
             </div>
+
+            <div class="box-new-text">
+              <p>dfwefwef wefwefwe wefwef</p>
+              <p>sdvsd sf</p>
+            </div>
+
+            <div class="product-card-sec1__equipment trager-for-checkbox">
+              <p class="product-card-sec1__equipment-desc">
+                Выбор комплектации:
+              </p>
+              <ul class="product-card-sec1__equipment-list list-reset">
+                <li class="product-card-sec1__equipment-item">
+                  <label class="checkbox-product">
+                    <input class="checkbox-product__input" type="checkbox">
+                    <span class="checkbox-product__box-img">
+                      <i>-50%</i>
+                      <img src="img/product-card/1.png" alt="img">
+                    </span>
+                    <span class="checkbox-product__text">
+                      <span>gerger ergfer</span>
+                      <span>rrger reger erger</span>
+                    </span>
+                  </label>
+                </li>
+                <li class="product-card-sec1__equipment-item">
+                  <label class="checkbox-product">
+                    <input class="checkbox-product__input" type="checkbox">
+                    <span class="checkbox-product__box-img">
+                      <i>-50%</i>
+                      <img src="img/product-card/1.png" alt="img">
+                    </span>
+                    <span class="checkbox-product__text">
+                      <span>gerger ergfer</span>
+                      <span>rrger reger erger</span>
+                    </span>
+                  </label>
+                </li>
+                <li class="product-card-sec1__equipment-item">
+                  <label class="checkbox-product">
+                    <input class="checkbox-product__input" type="checkbox">
+                    <span class="checkbox-product__box-img">
+                      <i>-50%</i>
+                      <img src="img/product-card/1.png" alt="img">
+                    </span>
+                    <span class="checkbox-product__text">
+                      <span>gerger ergfer</span>
+                      <span>rrger reger erger</span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
             <div class="product-card-sec1__equipment">
               <p class="product-card-sec1__equipment-desc">
                 Выбор комплектации:
@@ -256,11 +317,7 @@
             <div class="product-card-sec1__box-content" data-window-id="switchingVideo">
               <ul class="product-card-sec1__box-content-list list-reset">
                 <li>
-                  <video controls muted preload="auto" playsinline>
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video1.webm" type="video/webm">
-                    Ваш браузер не поддерживает видео.
-                  </video>
+                  <iframe src="https://vk.com/video_ext.php?oid=-73528734&id=456239160" allow="fullscreen; encrypted-media; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
                 </li>
                 <li>
                   <video controls muted preload="auto" playsinline>
@@ -349,6 +406,8 @@
           </div>
         </div>
       </div>
+
+      @@include('html/boxs/new-modal-product-card.html')
     </section>
     <section class="section product-card-sec2">
       <div class="product-card-sec2__container container">

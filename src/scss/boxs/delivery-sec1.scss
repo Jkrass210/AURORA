@@ -1,0 +1,21 @@
+.delivery-sec1 {
+  &__info {
+    max-width: 645px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--akcent);
+    .bold {
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .delivery-sec1 {
+    &__info {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  }
+}

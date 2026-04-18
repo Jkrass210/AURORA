@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты</title>
-  <link href="css/normalize.min.css?_v=20250116093924" rel="stylesheet">
-  <link href="css/swiper-bundle.min.css?_v=20250116093924" rel="stylesheet">
-  <link href="css/style.min.css?_v=20250116093924" rel="stylesheet">
+  <link href="css/normalize.min.css?_v=20251001111615" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css?_v=20251001111615" rel="stylesheet">
+  <link href="css/style.min.css?_v=20251001111615" rel="stylesheet">
 
-  <script src="js/swiper-bundle.min.js?_v=20250116093924" defer></script>
-  <script src="js/swiper-bundle.min.js.map?_v=20250116093924" defer></script>
-  <script src="js/fslightbox-min.js?_v=20250116093924" defer></script>
-  <script type="module" src="js/main-min.js?_v=20250116093924"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20251001111615" defer></script>
+  <script src="js/cleave-min.js?_v=20251001111615" defer></script>
+  <script src="js/swiper-bundle.min.js?_v=20251001111615" defer></script>
+  <script src="js/fslightbox-min.js?_v=20251001111615" defer></script>
+  <script type="module" src="js/main-min.js?_v=20251001111615"></script>
 </head>
 <body>
-  <header class="header" id="header">
+  <header class="header fixed" id="header">
 	<div class="header__top">
 		<div class="container header__container">
 			<div class="header__content">
@@ -137,7 +138,7 @@
 						</li>
 						<li>
 							<a href="#">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<svg width="19" height="19" viewBox="0 0 19 19" fill="none">
 									<use xlink:href="img/sprite.svg#111"></use>
 								</svg>
 							</a>
@@ -1927,70 +1928,91 @@
 </div>
     <section class="section contacts-sec1">
       <div class="contacts-sec1__container container">
-        <h2 class="section-title">
-  Контакты
-</h2>
-        <div class="contacts-sec1__top">
-          <div class="contacts-sec1__info">
-            <p>Оптовый отдел / Розничный отдел / Самовывоз</p>
-            <p>Уважаемые клиенты!</p>
-            <p>
-              По этому адресу для вас работает наш ШОУРУМ, где вы можете лично ознакомиться, протестировать и купить продукцию Nitecore. Ждем вас!
-            </p>
+        <div class="contacts-sec1__top-info-box">
+          <div class="contacts-sec1__left-box">
+            <div class="min-title">
+              <span>Оптовый отдел / Розничный отдел / Самовывоз</span>
+            </div>
+            <h1 class="about-us-sec1__title">
+              Контакты
+            </h1>
+            <div class="contacts-sec1__info">
+              <p>Уважаемые клиенты!</p>
+              <p>
+                По этому адресу для вас работает наш ШОУРУМ, где вы можете лично ознакомиться, протестировать и купить продукцию Aurora. Ждем вас!
+              </p>
+            </div>
           </div>
-          <address class="contacts-sec1__address">
-            <ul class="contacts-sec1__list-address list-reset">
-              <li>
-                <p>Москва г., Пятницкое шоссе., дом 18, пав 33</p>
-              </li>
-              <li>
-                <a href="tel:+74956601798">+7 (495) 660-17-98</a>
-              </li>
-              <li>
-                <a href="mailto:info@nitecore.ru">info@nitecore.ru</a>
-              </li>
-            </ul>
-            <ul class="contacts-sec1__list-chart list-reset">
-              <li>
-                График работы: с 9:00 до 18:00 ежедневно без выходных и перерывов.
-              </li>
-              <li>
-                График работы пункта самовывоза: с 9:00 до 19:00 ежедневно без выходных и перерывов.
-              </li>
-            </ul>
-          </address>
+          <div class="contacts-sec1__right-box">
+            <div class="about-us-sec1__table-wrapp">
+              <ul class="product-card-sec1__table list-reset">
+                <li class="product-card-sec1__table-row">
+                  <p>Адрес</p>
+                  <p>Москва г., Пятницкое шоссе., дом 18, пав 33</p>
+                </li>
+                <li class="product-card-sec1__table-row">
+                  <p>Номер телефона</p>
+                  <p><a href="tel:+74956601798">+7 (495) 660-17-98</a></p>
+                </li>
+                <li class="product-card-sec1__table-row">
+                  <p>Электронная почта</p>
+                  <p><a href="mailto:info@nitecore.ru">info@nitecore.ru</a></p>
+                </li>
+                <li class="product-card-sec1__table-row">
+                  <p>Время работы 1</p>
+                  <p><span>с 9:00 до 18:00</span>
+                    <span>ежедневно без выходных и перерывов.</span>
+                  </p>
+                </li>
+                <li class="product-card-sec1__table-row">
+                  <p>Время работы 2</p>
+                  <p><span>с 9:00 до 19:00</span>
+                    <span>ежедневно без выходных и перерывов.</span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="contacts-sec1__map"></div>
-        <div class="contacts-sec1__box-form">
-          <form class="contacts-sec1__form personal-data__form" method="post" action="#">
-            <h3 class="contacts-sec1__title-form">
-              Оставьте заявку и мы свяжемся с вами
-            </h3>
-            <ul class="contacts-sec1__form-list personal-data__list list-reset">
-              <li>
-                <label for="name">Полное имя:</label>
-                <input type="text" name="name" id="name">
-              </li>
-              <li>
-                <label for="email">Адрес электронной почты:</label>
-                <input type="text" name="email" id="email">
-              </li>
-              <li>
-                <label for="tel">Номер телефона:</label>
-                <input type="tel" name="tel" id="tel">
-              </li>
-              <li>
-                <label for="message">Детали:</label>
-                <textarea id="message" name="message"></textarea>
-              </li>
-            </ul>
-            <button class="personal-data__submit btn-reset">
-              Отправить
-            </button>
-          </form>
-        </div>
       </div>
     </section>
+    <section class="section box-form-1">
+  <div class="box-form-1__container container">
+    <div class="box-form-1__content">
+      <h2 class="box-form-1__title">
+        Оставьте заявку — мы перезвоним!
+      </h2>
+      <form class="box-form-1__form" accept="#" method="post">
+        <ul class="box-form-1__list list-reset">
+          <li>
+            <input class="box-form-1__input" type="text" name="name" id="name1" placeholder="Ваше имя">
+          </li>
+          <li>
+            <input class="box-form-1__input" type="text" name="email" id="email1" placeholder="Электронная почта">
+          </li>
+          <li>
+            <input class="box-form-1__input" type="tel" name="phone" id="tel1" placeholder="+7(999) 999-99-99">
+          </li>
+          <li>
+            <textarea class="box-form-1__textarea" placeholder="Детали"></textarea>
+          </li>
+          <li>
+            <button class="box-form-1__submit disabled btn3__btn btn-reset">Отправить</button>
+          </li>
+        </ul>
+        <label class="checkbox4">
+  <input type="checkbox" name="approval" id="approval">
+  <span class="checkbox4__castom-input">
+  </span>
+  <span class="checkbox4__text">
+    Нажимая на кнопку «Оставить заявку», вы соглашаетесь с условиями <a href="#">политики обработки персональных данных</a>
+  </span>
+</label>
+      </form>
+    </div>
+  </div>
+</section>
   </main>
   <footer class="footer" id="footer">
   <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
@@ -2128,6 +2150,69 @@
       </div>
     </div>
   </div>
+  <div class="cookie" id="messageCookie">
+  <div class="cookie__container container">
+    <div class="cookie__conent">
+      <form class="cookie__form">
+        <div class="left">
+          <img src="img/cookie.svg" alt="cookie">
+          <p>Мы используем файлы <a href="#">cookie</a> для вашего удобства пользования сайтом и повышения качества
+            рекомендаций</p>
+        </div>
+        <div class="right">
+          <a href="#" target="_blank" class="btn3__btn more cookie__btn">
+            Подробнее
+          </a>
+          <button class="btn3__btn btn-reset cookie__btn" id="btnCookie">
+            Согласен
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cookieMessage = document.getElementById('messageCookie');
+      const cookieBtn = document.getElementById('btnCookie');
+      const storageKey = 'cookieAccepted';
+      const hideDuration = 60 * 60 * 1000; // 1 час
+
+      // Проверяем, был ли уже принят cookie
+      const isCookieAccepted = localStorage.getItem(storageKey);
+      const lastHideTime = localStorage.getItem(`${storageKey}_time`);
+
+      // Если cookie принят и не прошла неделя — скрываем блок
+      if (isCookieAccepted && lastHideTime) {
+        const currentTime = new Date().getTime();
+        if (currentTime - lastHideTime < hideDuration) {
+          cookieMessage.style.display = 'none';
+        } else {
+          // Если неделя прошла — удаляем запись
+          localStorage.removeItem(storageKey);
+          localStorage.removeItem(`${storageKey}_time`);
+        }
+      }
+
+      // Обработчик клика на кнопку "Согласен"
+      cookieBtn.addEventListener('click', function (e) {
+        e.preventDefault(); // Отменяем отправку формы (если она есть)
+        cookieMessage.style.display = 'none';
+
+        // Сохраняем в localStorage время закрытия
+        localStorage.setItem(storageKey, 'true');
+        localStorage.setItem(`${storageKey}_time`, new Date().getTime());
+      });
+    });
+  </script>
+</div>
+  <div class="modal-discount" id="modalDiscount">
+  <div class="modal-discount__window">
+    <button class="modal-discount__close btn-reset"></button>
+    <a href="#" class="modal-discount__link">
+      <picture><source srcset="img/modal-discount/1.webp" type="image/webp"><img src="img/modal-discount/1.png" alt="img"></picture>
+    </a>
+  </div>
+</div>
 </footer>
 </body>
 </html>

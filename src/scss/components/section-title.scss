@@ -5,11 +5,38 @@
   font-size: 36px;
   line-height: 111%;
   color: var(--akcent);
+  transition: color 0.4s ease-in-out;
+
+  a {
+    display: flex;
+    transition: color 0.4s ease-in-out;
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,
+    &:hover,
+    &:active {
+      color: var(--knopka);
+    }
+  }
+
+  .desc_section {
+    font-size: 20px;
+    line-height: 111%;
+  }
 }
 
 @media (max-width: 1030px) {
   .section-title {
     margin-bottom: 25px;
     font-size: 28px;
+
+    .desc_section {
+      font-size: 18px;
+      line-height: 111%;
+    }
   }
 }

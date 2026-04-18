@@ -1,0 +1,37 @@
+.delivery-sec4 {
+  &__title {
+    margin-bottom: 32px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 108%;
+    text-transform: uppercase;
+    color: var(--color-text-black);
+  }
+  &__desc {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    max-width: 645px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--color-text-black);
+    p:last-child {
+      font-weight: 600;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .delivery-sec4 {
+    &__title {
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+    &__desc {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.delivery-sec3 {
+  padding-top: 10px;
+  &__title {
+    margin-bottom: 45px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 106%;
+    color: var(--color-text-black);
+  }
+  &__list-payment {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    li {
+      flex: 1;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .delivery-sec3 {
+    &__title {
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+  }
+}

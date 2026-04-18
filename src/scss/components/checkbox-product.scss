@@ -1,0 +1,56 @@
+.checkbox-product {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  &:focus,&:focus-visible {
+    outline: none;
+  }
+  &:focus-visible,&:hover,&:active {
+    .checkbox-product__box-img {
+      border-color: var(--color-btn-gray);
+    }
+  }
+  &__input {
+    display: none;
+    &:checked + .checkbox-product__box-img {
+      border-color: var(--color-btn-gray);
+    }
+  }
+  &__box-img {
+    overflow: hidden;
+    position: relative;
+    width: 88px;
+    min-width: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color .4s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid var(--border2);
+    i {
+      border-radius: 0 0 5px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 3px;
+      background-color: var(--border);
+      transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      color: var(--color-text-white);
+    }
+  }
+  &__text {
+    max-width: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text-black);
+  }
+}

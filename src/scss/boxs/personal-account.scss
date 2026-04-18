@@ -1,4 +1,161 @@
 .personal-account {
+  &__content {
+    h3,h4 {
+      color: var(--color-text-black);
+    }
+    .col {
+      padding-top: 10px;
+      display: flex;
+      a {
+        color: var(--color-text-black);
+        text-decoration: underline;
+        &:focus, &:focus-visible {
+          outline: none;
+        }
+        &:focus-visible,&:hover,&:active {
+          color: var(--color-text-gray);
+        }
+      }
+    }
+    .sale-profile-detail-form {
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+      .bx-sls .bx-ui-sls-fake, .bx-sls .bx-ui-sls-route {
+        color: var(--color-text-black) !important;
+      }
+      .row.mb-3.mt-5 {
+        .col {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          input {
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            justify-content: center;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            color: var(--color-text-white);
+            background-color: var(--color-text-black);
+            transition: background-color .4s ease-in-out;
+            &:focus, &:focus-visible {
+              outline: none;
+            }
+            &:focus-visible,&:hover,&:active {
+              background-color: var(--color-text-gray);
+            }
+          }
+        }
+      }
+      .form-group {
+        margin-bottom: 25px;
+        .col-form-label {
+          font-family: var(--font-family);
+          font-weight: 500;
+          font-size: 20px;
+          color: var(--color-text-black);
+        }
+        input,textarea {
+          width: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          flex: 1;
+          border: 1px solid var(--colir-background-body);
+          background-color: var(--color-background-card);
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 16px;
+          color: var(--color-text-black);
+          transition: border-color .4s ease-in-out;
+          &:focus,&:focus-visible {
+            outline: none;
+          }
+          &:focus-visible {
+            border-color: var(--color-background-card);
+          }
+        }
+        textarea {
+          resize: none;
+        }
+        .dropdown-block.bx-ui-sls-input-block{
+          border-radius: 10px;
+          border: 1px solid var(--colir-background-body);
+          background-color: var(--color-background-card);
+        }
+      }
+      .bx-sls .dropdown-fade2white {
+        background: none;
+      }
+    }
+    .table-responsive {
+      flex: 1;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        height: 7px;
+      }
+          
+      &::-webkit-scrollbar-track {
+        border-radius: 100px;
+        background-color: var(--color-background-card);
+      }
+          
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        background-color: var(--color-text-gray);
+      }
+      .table {
+        width: 100%;
+        tr {
+          color: var(--p-text);
+          th,td {
+            white-space: nowrap;
+            padding: 10px 10px;
+          }
+          td {
+            text-align: center;
+          }
+        }
+        .text-right {
+          a:first-child {
+            text-decoration: underline;
+            &:focus,&:focus-visible {
+              outline: none;
+            }
+            &:focus-visible,&:hover,&:active {
+              color: var(--color-text-gray);
+            }
+          }
+        }
+      }
+    }
+    .mr-4 {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      justify-content: center;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: var(--color-text-black);
+      background-color: var(--color-background-yellow);
+      transition: color .4s ease-in-out;
+      &:focus, &:focus-visible {
+        outline: none;
+      }
+      &:focus-visible,&:hover,&:active {
+        color: var(--color-text-white);
+      }
+    }
+  }
   &__list-points {
     margin-bottom: 40px;
     display: flex;
@@ -40,6 +197,20 @@
         &.active {
           border-color: var(--color-text-black);
         }
+        &.exit_lk {
+          position: relative;
+          &::after {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            content: "";
+            margin: auto;
+            width: 70%;
+            height: 1px;
+            transform: translate(-50%, 1px);
+            background-color: var(--color-text-black);
+          }
+        }
       }
     }
   }
@@ -48,6 +219,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .personal-account__content .table-responsive {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-text-gray) var(--color-background-card);
   }
 }
 

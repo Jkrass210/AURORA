@@ -165,6 +165,16 @@
   }
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  background-color: var(--colir-background-body);
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: none;
+}
+
 @media (max-width: 1030px) {
   .header {
     &__top {
@@ -176,7 +186,8 @@
       position: absolute;
       z-index: 5;
       top: 100px;
-      height: calc(100vh - 100px);
+      height: auto;
+      padding-bottom: 20px;
       max-width: 100%;
       width: 100%;
       transform: translateY(-120%);
@@ -283,6 +294,13 @@
       justify-content: space-between;
       flex-direction: row-reverse;
     }
+  }
+}
+
+@media (max-width: 669px) {
+  .fixed {
+    position: static;
+    box-shadow: none;
   }
 }
 

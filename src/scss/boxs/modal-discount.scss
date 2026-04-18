@@ -1,0 +1,51 @@
+.modal-discount {
+  position: fixed;
+  z-index: 204;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  &__window {
+    position: relative;
+    border-radius: 20px;
+  }
+  &__close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 35px;
+    min-height: 35px;
+    height: 35px;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+.dark {
+  .light-img {
+    display: none;
+  }
+}
+
+.light {
+  .dark-img {
+    display: none;
+  }
+  .light-img {
+    display: block;
+  }
+}
+
+@media (max-width: 669px) {
+  .modal-discount {
+    &__close {
+      top: 5px;
+      right: 10px;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.mb-3.d-flex.align-items-center {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 32px 47px;
+  background-color: var(--color-background-card);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: var(--color-text-black);
+
+  .text-muted {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-black);
+  }
+}
+
+.btn.btn-sm.btn-primary, .btn.btn-sm.btn-secondary {
+  padding: 10px;
+  background-color: var(--color-text-black);
+  display: inline-block;
+  font-size: 14px;
+  color: var(--color-text-white);
+  border-radius: 10px;
+  transition: background-color 0.4s ease-in-out;
+  
+  &:focus,&:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible,&:hover,&:active {
+    background-color: var(--knopka);
+  }
+}
+
+.catalog-compare-filter-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-black);
+}
+
+.catalog-compare.mb-4.bx-site {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catalog-compare-filter.p-3.mb-3 {
+  padding: 32px 47px;
+  background-color: var(--color-background-card);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--color-text-black);
+
+  .row {
+    display: flex;
+    gap: 20px;
+
+    input,label {
+      cursor: pointer;
+
+    }
+  }
+}
+
+.catalog-compare-table th, .catalog-compare-table td {
+  font-size: 14px;
+  color: var(--p-text);
+}
+
+.catalog-compare-table.table-responsive {
+  border-radius: 20px;
+  padding: 32px 47px;
+  background-color: var(--color-background-card);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  color: var(--color-text-black);
+}
+
+.text-danger {
+  text-decoration: underline;
+
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+
+  &:hover, &:focus-visible, &:active {
+    color: var(--knopka);
+  }
+}
+.auth__desc {
+  display: flex;
+}
+.auth__link {
+  padding: 10px;
+}
+@media (max-width: 1030px) {
+  .mb-3.d-flex.align-items-center{
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .catalog-compare-filter.p-3.mb-3 {
+    padding: 20px;
+    .row {
+      flex-wrap: wrap;
+    }
+  }
+  .catalog-compare-table.table-responsive {
+    padding: 20px;
+    overflow: auto;
+  }
+}

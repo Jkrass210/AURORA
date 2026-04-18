@@ -22,13 +22,14 @@ export function openMenuLevel1({boxCatalog, classBtns, classBox, targetSelector}
   const buttons = boxCatalog.querySelectorAll(classBtns);
 
   buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('mouseover', () => {
       buttons.forEach((el) => {
         const parent = el.parentElement;
         if (parent.classList.contains('hovered')) {
             parent.classList.remove('hovered');
         }
       });
+
       boxCatalog.querySelectorAll(classBox).forEach((el) => el.classList.remove('active'));
 
       const parent = btn.parentElement;
@@ -37,27 +38,32 @@ export function openMenuLevel1({boxCatalog, classBtns, classBox, targetSelector}
 
       const boxActive = parent.querySelector(classBox)
 
-      boxActive.classList.add('active')
+      if (boxActive) {
+        boxActive.classList.add('active')
 
-      updateContent({
-        boxCatalog: boxCatalog.querySelector('.drop-down-catalog__item.hovered'),
-        sourceSelector: '.drop-down-catalog__content-wrapp-2',
-        targetSelector: '.drop-down-catalog__content-level-2'
-      });
+        updateContent({
+          boxCatalog: boxCatalog.querySelector('.drop-down-catalog__item.hovered'),
+          sourceSelector: '.drop-down-catalog__content-wrapp-2',
+          targetSelector: '.drop-down-catalog__content-level-2'
+        });
 
-      updateContent({
-        boxCatalog:boxCatalog, 
-        sourceSelector:classBox, 
-        targetSelector:targetSelector
-      })
-      
-      const mainContent = document.querySelector('.drop-down-catalog__main-content')
-      openMenuLevel2({
-        boxCatalog: mainContent,
-        classBtns: 'button.drop-down-catalog__btn-2', 
-        classBox: '.drop-down-catalog__content-wrapp-2', 
-        targetSelector: '.drop-down-catalog__content-level-2'
-      })
+        updateContent({
+          boxCatalog:boxCatalog,
+          sourceSelector:classBox,
+          targetSelector:targetSelector
+        })
+
+        const mainContent = document.querySelector('.drop-down-catalog__main-content')
+        openMenuLevel2({
+          boxCatalog: mainContent,
+          classBtns: 'button.drop-down-catalog__btn-2',
+          classBox: '.drop-down-catalog__content-wrapp-2',
+          targetSelector: '.drop-down-catalog__content-level-2'
+        })
+      } else {
+        const mainContent = document.querySelector('.drop-down-catalog__main-content');
+        mainContent.innerHTML = '';
+      }
     })
   })
 }
@@ -98,7 +104,7 @@ export function openMenuLevel2({boxCatalog, classBtns, classBox, targetSelector}
 
 export function setupMobileMenu() {
   const catalog = document.querySelector(".drop-down-catalog");
-  const buttons = catalog.querySelectorAll('button.drop-down-catalog__btn');
+  const buttons = catalog.querySelectorAll('a.parrents');
   const buttons2 = catalog.querySelectorAll('.drop-down-catalog__content-level-1 button.drop-down-catalog__btn-2');
   document.querySelectorAll('.hovered-2').forEach((el) => el.classList.remove('hovered-2'));
   buttons.forEach((button) => {
@@ -145,17 +151,10 @@ export function handleResize() {
     } else {
       openMenuLevel1({
         boxCatalog:boxCatalog,
-        classBtns:'button.drop-down-catalog__btn', 
+        classBtns:'a.drop-down-catalog__btn', 
         classBox:'.drop-down-catalog__content-wrapp', 
         targetSelector:'.drop-down-catalog__main-content'
       });
     }
   }
 }
-
-
-
-
-
-
-

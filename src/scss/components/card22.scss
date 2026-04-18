@@ -1,0 +1,16 @@
+.card22 {
+  height: 100%;
+  position: relative;
+  &__box {
+    height: 100%;
+    border: 1px solid rgba(252, 69, 23, 0.2);
+    border-radius: 20px;
+    padding: 26px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+  }
+}

@@ -55,3 +55,11 @@
     }
   }
 }
+
+@media (max-width: 669px) {
+  .search {
+    &__input {
+      padding: 8px 17px;
+    }
+  }
+}

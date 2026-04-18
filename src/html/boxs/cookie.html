@@ -1,0 +1,55 @@
+<div class="cookie" id="messageCookie">
+  <div class="cookie__container container">
+    <div class="cookie__conent">
+      <form class="cookie__form">
+        <div class="left">
+          <img src="img/cookie.svg" alt="cookie">
+          <p>Мы используем файлы <a href="#">cookie</a> для вашего удобства пользования сайтом и повышения качества
+            рекомендаций</p>
+        </div>
+        <div class="right">
+          <a href="#" target="_blank" class="btn3__btn more cookie__btn">
+            Подробнее
+          </a>
+          <button class="btn3__btn btn-reset cookie__btn" id="btnCookie">
+            Согласен
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const cookieMessage = document.getElementById('messageCookie');
+      const cookieBtn = document.getElementById('btnCookie');
+      const storageKey = 'cookieAccepted';
+      const hideDuration = 60 * 60 * 1000; // 1 час
+
+      // Проверяем, был ли уже принят cookie
+      const isCookieAccepted = localStorage.getItem(storageKey);
+      const lastHideTime = localStorage.getItem(`${storageKey}_time`);
+
+      // Если cookie принят и не прошла неделя — скрываем блок
+      if (isCookieAccepted && lastHideTime) {
+        const currentTime = new Date().getTime();
+        if (currentTime - lastHideTime < hideDuration) {
+          cookieMessage.style.display = 'none';
+        } else {
+          // Если неделя прошла — удаляем запись
+          localStorage.removeItem(storageKey);
+          localStorage.removeItem(`${storageKey}_time`);
+        }
+      }
+
+      // Обработчик клика на кнопку "Согласен"
+      cookieBtn.addEventListener('click', function (e) {
+        e.preventDefault(); // Отменяем отправку формы (если она есть)
+        cookieMessage.style.display = 'none';
+
+        // Сохраняем в localStorage время закрытия
+        localStorage.setItem(storageKey, 'true');
+        localStorage.setItem(`${storageKey}_time`, new Date().getTime());
+      });
+    });
+  </script>
+</div>

@@ -1,0 +1,24 @@
+.card21 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  gap: 20px;
+  border-radius: 20px;
+  height: 100%;
+  padding: 60px 30px 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+  &__img {
+    position: absolute;
+  }
+  .card20__title {
+    text-align: start;
+  }
+}
+@media (max-width: 1030px) {
+  .card21 {
+    padding: 45px 15px 15px;
+    gap: 20px;
+  }
+}

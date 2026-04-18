@@ -34,15 +34,19 @@
     row-gap: 35px;
     column-gap: 20px;
   }
+  &__bottom-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn3__btn {
+      padding: 20px;
+    }
+  }
 }
 
 @media (max-width: 669px) {
   .main-sec7 {
     padding: 60px 0 52px;
-
-    &__link {
-      display: none;
-    }
 
     &__list {
       grid-template-columns: 1fr;

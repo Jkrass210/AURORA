@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/components/head.html',{"title":"forget"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"forget"})
+    <section class="section box-form-2">
+      <div class="box-form-1__container container">
+        <div class="box-form-1__content">
+          <h2 class="box-form-1__title">Выберите, какую информацию использовать для изменения пароля</h2>
+          <form class="box-form-1__form" accept="#" method="post">
+            <ul class="box-form-1__list list-reset">
+              <li>
+                <input class="box-form-1__input" type="text" name="name" placeholder="Логин или email">
+              </li>
+              <li>
+                <button class="btn3__btn btn-reset">Отправить</button>
+              </li>
+              <li>
+                <a class="btn3__btn btn-reset">Авторизация</a>
+              </li>
+            </ul>
+            <!--<div class="box-form-2__box-error">
+              <p>Ohheef woehdf ofokwn wfhwef</p>
+            </div>-->
+          </form>
+          <div class="box-form-2__box-hints">
+            <p>Контрольная строка для смены пароля, а также ваши регистрационные данные, будут высланы вам по email.</p>
+          </div>
+          <div class="box-form-2__box-error">
+            <p>Ohheef woehdf ofokwn wfhwef</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

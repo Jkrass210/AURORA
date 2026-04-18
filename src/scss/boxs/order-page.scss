@@ -20,6 +20,7 @@
     }
 
     .bx-soa-cart-total {
+      border-radius: 10px;
       border: none;
       background-color: var(--color-background-card);
     }
@@ -28,12 +29,12 @@
       width: calc(424 / 1440 * 100%);
 
       .bx-soa-cart-total-line {
-        border-color: var(--color-background-yellow);
+        border-color: var(--color-btn-gray2);
         font-family: var(--font-family);
         font-weight: 500;
         font-size: 20px;
         letter-spacing: 0.03em;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
 
         .bx-soa-cart-d {
           font-size: 24px;
@@ -50,13 +51,15 @@
       a {
         display: block;
         width: 100%;
-        padding: 30px;
+        border: none;
+        padding: 20px;
+        border-radius: 10px;
         font-family: var(--font-family);
         font-weight: 500;
         font-size: 14px !important;
         text-align: center;
-        color: var(--color-text-black);
-        background-color: var(--color-background-yellow);
+        color: var(--color-text-white);
+        background-color: var(--color-text-black);
         transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 
         &:focus,
@@ -67,7 +70,6 @@
         &:hover,
         &:focus-visible,
         &:active {
-          color: var(--color-text-white);
           background-color: var(--color-text-path);
         }      
       }
@@ -75,6 +77,8 @@
 
     .bx-soa-section {
       border: none;
+      border-radius: 10px;
+      overflow: hidden;
     }
 
     .bx-soa-section-title-container {
@@ -87,7 +91,7 @@
         font-weight: 600;
         font-size: 20px;
         letter-spacing: 0.03em;
-        color: var(--color-background-yellow);
+        color: var(--color-text-white);
       }
     }
 
@@ -110,7 +114,7 @@
           font-weight: 500;
           font-size: 20px;
           letter-spacing: 0.03em;
-          color: var(--color-text-white);
+          color: var(--color-text-black);
         }
       }
 
@@ -123,14 +127,15 @@
           font-weight: 400;
           font-size: 14px;
           line-height: 150%;
-          color: var(--color-text-white);
+          color: var(--color-text-black);
         }
       }
     }
 
     .dropdown-block {
       min-height: 33px;
-      border: 1px solid var(--colir-background-body);
+      border-radius: 5px;
+      border: 1px solid var(--color-btn-gray2);
       background-color: var(--color-background-card);
 
       .bx-ui-sls-fake {
@@ -179,12 +184,12 @@
     }
 
     .bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container {
-      border-color: var(--color-background-yellow);
+      border-color: var(--color-text-black);
       background: transparent;
     }
 
     .bx-soa-pp-desc-container .bx-soa-pp-company {
-      color: var(--color-text-white);
+      color: var(--color-text-black);
       border: none;
       background-color: var(--colir-background-body);
     }
@@ -194,14 +199,14 @@
       font-weight: 400;
       font-size: 12px;
       margin-bottom: 5px;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
     }
 
     .bx-soa-pp-list-description {
       font-family: var(--font-family);
       font-weight: 700;
       font-size: 16px;
-      color: var(--color-text-white);
+      color: var(--color-text-black);
     }
 
     .bx-soa-customer-field, .bx-soa-location-input-container {
@@ -211,17 +216,18 @@
         font-family: var(--third-family);
         font-weight: 500;
         font-size: 16px;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
       }
       input {
         padding: 10px;
         width: 100%;
-        border: 1px solid var(--colir-background-body);
+        border-radius: 5px;
+        border: 1px solid var(--color-btn-gray2);
         background-color: var(--color-background-card);
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 16px;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
         transition: border-color 0.4s ease-in-out;
 
         &:focus,
@@ -232,7 +238,7 @@
         &:focus-visible,
         &:hover,
         &:active {
-          border-color: var(--color-background-yellow);
+          border-color: var(--color-text-black);
         }
       }
       textarea {
@@ -240,12 +246,13 @@
         min-height: 84px;
         width: 100%;
         padding: 10px;
-        border: 1px solid var(--colir-background-body);
+        border-radius: 5px;
+        border: 1px solid var(--color-btn-gray2);
         background-color: var(--color-background-card);
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 16px;
-        color: var(--color-text-white);
+        color: var(--color-text-black);
         transition: border-color 0.4s ease-in-out;
 
         &:focus,
@@ -256,7 +263,7 @@
         &:focus-visible,
         &:hover,
         &:active {
-          border-color: var(--color-background-yellow);
+          border-color: var(--color-text-black);
         }
       }
     }
@@ -282,9 +289,8 @@
       a {
         font-family: var(--font-family);
         font-weight: 400;
-        font-size: 18px;
-        line-height: 159%;
-        color: var(--color-text-white);
+        font-size: 16px;
+        color: var(--color-text-black);
         transition: color 0.4s ease-in-out;
 
         &:focus,
@@ -295,11 +301,19 @@
         &:focus-visible,
         &:hover,
         &:active {
-          color: var(--color-background-yellow);
+          color: var(--color-text-gray);
         }
       }
     }
   }
+  .bx-soa-item-td-text .bx-price{
+    font-size: 20px;
+    color: var(--color-text-black);
+  }
+}
+
+.bx-soa-cart-total.bx-soa-cart-total-fixed {
+  top: 135px;
 }
 
 @media (max-width: 1200px) {
@@ -313,9 +327,18 @@
 }
 
 @media (max-width: 1030px) {
+  .bx-soa-cart-total.bx-soa-cart-total-bottom{
+    opacity: 1;
+  }
+  .bx-soa-cart-total.bx-soa-cart-total-fixed {
+    position: static;
+  }
+  .bx-soa-cart-total-ghost {
+    padding-top: 0 !important;
+  }
   .order-page-container {
     #bx-soa-order {
-      flex-direction: column-reverse;
+      flex-direction: column;
 
       .bx-soa-cart-total.bx-soa-cart-total-fixed {
         position: static;

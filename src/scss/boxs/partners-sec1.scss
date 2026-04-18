@@ -1,0 +1,21 @@
+.partners-sec1 {
+  &__info {
+    margin-bottom: 44px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 40px;
+    li:first-child, li:last-child {
+      grid-column: span 2;
+    }
+  }
+}
+@media (max-width: 1030px) {
+  .partners-sec1 {
+    &__info {
+      margin-bottom: 17px;
+    }
+  }
+}

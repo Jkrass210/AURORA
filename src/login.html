@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/components/head.html',{"title":"login"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    @@include('html/components/path.html',{"text":"Вход на сайт"})
+    <section class="section box-form-2">
+      <div class="box-form-1__container container">
+        <div class="box-form-1__content">
+          <h2 class="box-form-1__title">Вход на сайт</h2>
+          <form class="box-form-1__form" accept="#" method="post">
+            <ul class="box-form-1__list list-reset">
+              <li>
+                <input class="box-form-1__input" type="text" name="name" placeholder="Логин">
+              </li>
+              <li>
+                <input class="box-form-1__input" type="password" name="name" placeholder="Пароль">
+              </li>
+              <li>
+                @@include('html/components/checkbox5.html')
+              </li>
+              <li>
+                <button class="btn3__btn btn-reset">Отправить</button>
+              </li>
+              <li>
+                <a href="#" class="btn3__btn btn-reset">Регистрация</a>
+              </li>
+              <li>
+                <a href="#" class="btn3__btn btn-reset">Забыли свой пароль?</a>
+              </li>
+            </ul>
+            <!--<div class="box-form-2__box-error">
+              <p>Ohheef woehdf ofokwn wfhwef</p>
+            </div>-->
+          </form>
+          <div class="box-form-2__box-error">
+            <p>Ohheef woehdf ofokwn wfhwef</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>
